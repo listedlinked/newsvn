@@ -1,5 +1,5 @@
 ---
-name: "solaris-dmg-signer"
+name: "amsterdamcoin-dmg-signer"
 suites:
 - "trusty"
 architectures:
@@ -7,10 +7,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/solaris-project/solaris-detached-sigs.git"
+- "url": "https://github.com/amsterdamcoin-project/amsterdamcoin-detached-sigs.git"
   "dir": "signature"
 files:
-- "solaris-osx-unsigned.tar.gz"
+- "amsterdamcoin-osx-unsigned.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -27,8 +27,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=solaris-osx-unsigned.tar.gz
-  SIGNED=solaris-osx-signed.dmg
+  UNSIGNED=amsterdamcoin-osx-unsigned.tar.gz
+  SIGNED=amsterdamcoin-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"

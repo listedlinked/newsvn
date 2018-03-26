@@ -423,7 +423,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../solaris.qrc">
+            <iconset resource="../amsterdamcoin.qrc">
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="shortcut">
@@ -1387,7 +1387,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../solaris.qrc"/>
+  <include location="../amsterdamcoin.qrc"/>
  </resources>
  <connections/>
 </ui>

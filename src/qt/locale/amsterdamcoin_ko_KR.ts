@@ -176,16 +176,16 @@
         <translation>지갑 암호화 확인</translation>
     </message>
     <message>
-        <source>Solaris will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XLRs from being stolen by malware infecting your computer.</source>
-        <translation>Solaris는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 XLRs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <source>Solaris will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AMSs from being stolen by malware infecting your computer.</source>
+        <translation>Solaris는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 AMSs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>지갑을 암호화 하시겠습니까?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XLR&lt;/b&gt;!</source>
-        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 XLR를 잃게 됩니다&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AMS&lt;/b&gt;!</source>
+        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 AMS를 잃게 됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -610,16 +610,16 @@
         <translation>Solaris 주소로 전송하기</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and solaris: URIs)</source>
-        <translation>결제 요청 (QR 코드 및 solaris: URI 생성)</translation>
+        <source>Request payments (generates QR codes and amsterdamcoin: URIs)</source>
+        <translation>결제 요청 (QR 코드 및 amsterdamcoin: URI 생성)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
         <translation>&amp;프라이버시</translation>
     </message>
     <message>
-        <source>Privacy Action for zXLR and Obfuscation</source>
-        <translation>zXLR와 난독화를 위한 프라이버스 작업</translation>
+        <source>Privacy Action for zAMS and Obfuscation</source>
+        <translation>zAMS와 난독화를 위한 프라이버스 작업</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -853,8 +853,8 @@ Address: %4
         <translation>텍스트라벨</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (solaris.conf).</source>
-        <translation>모든 트랜잭션이 표시되지는 않습니다. 모든 트랜잭션을 보려면 구성 파일 (solaris.conf)에 txindex = 1을 설정해야합니다.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (amsterdamcoin.conf).</source>
+        <translation>모든 트랜잭션이 표시되지는 않습니다. 모든 트랜잭션을 보려면 구성 파일 (amsterdamcoin.conf)에 txindex = 1을 설정해야합니다.</translation>
     </message>
 </context>
 <context>
@@ -1548,32 +1548,32 @@ Please check the address and try again.</source>
         <translation>익명화 레벨을 선택해주세요.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 XLR</source>
-        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 XLR 를 섞을 수 있습니다.</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 AMS</source>
+        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 AMS 를 섞을 수 있습니다.</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 XLR</source>
-        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 XLR 를 섞을 수 있습니다.</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 AMS</source>
+        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 AMS 를 섞을 수 있습니다.</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16개의 개별 마스터노드를 사용</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 XLR to anonymize 10000 XLR</source>
-        <translation>이 옵션은 가장 빠르게 전송되며 10000 XLR 익명화에 약 ~0.025 XLR의 비용이 들어갑니다.</translation>
+        <source>This option is the quickest and will cost about ~0.025 AMS to anonymize 10000 AMS</source>
+        <translation>이 옵션은 가장 빠르게 전송되며 10000 AMS 익명화에 약 ~0.025 AMS의 비용이 들어갑니다.</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 XLR to anonymize 10000 XLR</source>
-        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 XLR 익명화에 약 0.05 XLR의 비용이 들어갑니다.</translation>
+        <source>This option is moderately fast and will cost about 0.05 AMS to anonymize 10000 AMS</source>
+        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 AMS 익명화에 약 0.05 AMS의 비용이 들어갑니다.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>이것은 가장 느리고 안전한 옵션입니다. 최고 익명성을 사용하면 비용이 발생합니다.</translation>
     </message>
     <message>
-        <source>0.1 XLR per 10000 XLR you anonymize.</source>
-        <translation>10000 XLR 익명화에 0.1 XLR 가 듭니다.</translation>
+        <source>0.1 AMS per 10000 AMS you anonymize.</source>
+        <translation>10000 AMS 익명화에 0.1 AMS 가 듭니다.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1707,29 +1707,29 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/solaris-project/solaris-project-translations</source>
+https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translations</source>
         <translation>지원 언어가 없거나 번역이 불완전한가요? 번역을 도와주세요 :
-https://www.transifex.com/solaris-project/solaris-project-translations</translation>
+https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
     </message>
     <message>
-        <source>Percentage of incoming XLR which get automatically converted to zXLR via Zerocoin Protocol (min: 10%)</source>
-        <translation>XLR수신시 자동변환 zXLR 퍼센트 (최소값:10%)</translation>
+        <source>Percentage of incoming AMS which get automatically converted to zAMS via Zerocoin Protocol (min: 10%)</source>
+        <translation>AMS수신시 자동변환 zAMS 퍼센트 (최소값:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zXLR</source>
-        <translation>자동 변환되는 zXLR 퍼센트</translation>
+        <source>Percentage of autominted zAMS</source>
+        <translation>자동 변환되는 zAMS 퍼센트</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough XLR for this denomination is available</source>
-        <translation>이 디노미네이션의 XLR가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough AMS for this denomination is available</source>
+        <translation>이 디노미네이션의 AMS가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
     </message>
     <message>
-        <source>Preferred Automint zXLR Denomination</source>
-        <translation>선호하는 자동생성 zXLR 디노미네이션 </translation>
+        <source>Preferred Automint zAMS Denomination</source>
+        <translation>선호하는 자동생성 zAMS 디노미네이션 </translation>
     </message>
     <message>
         <source>Connect to the Solaris network through a SOCKS5 proxy.</source>
@@ -1863,8 +1863,8 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
         <translation>Form</translation>
     </message>
     <message>
-        <source>XLR Balances</source>
-        <translation>XLR 잔액</translation>
+        <source>AMS Balances</source>
+        <translation>AMS 잔액</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1931,12 +1931,12 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
         <translation>전체 잔액 (대기중 코인 포함)</translation>
     </message>
     <message>
-        <source>XLR:</source>
-        <translation>XLR:</translation>
+        <source>AMS:</source>
+        <translation>AMS:</translation>
     </message>
     <message>
-        <source>zXLR:</source>
-        <translation>zXLR:</translation>
+        <source>zAMS:</source>
+        <translation>zAMS:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1978,7 +1978,7 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
         <translation>잘못된 결제 주소 %1</translation>
     </message>
     <message>
-        <source>Cannot start solaris: click-to-pay handler</source>
+        <source>Cannot start amsterdamcoin: click-to-pay handler</source>
         <translation>Solaris을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
@@ -2064,12 +2064,12 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>XLR which were anonymized via Zerocin Protocol</source>
-        <translation>제로코인 프로토콜을 통해 익명화된 XLR</translation>
+        <source>AMS which were anonymized via Zerocin Protocol</source>
+        <translation>제로코인 프로토콜을 통해 익명화된 AMS</translation>
     </message>
     <message>
-        <source>ZeroSolaris (zXLR)</source>
-        <translation>제로코인 XLR (zXLR)</translation>
+        <source>ZeroSolaris (zAMS)</source>
+        <translation>제로코인 AMS (zAMS)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2080,8 +2080,8 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
         <translation>표시된 정보가 오래되었을 수 있습니다. 연결이 완료되면 지갑이 Solaris 네트워크와 자동으로 동기화될 예정이지만, 아직 해당 프로세스가 완료되지 않았습니다.</translation>
     </message>
     <message>
-        <source>Enter an amount of XLR to convert to zXLR</source>
-        <translation>zXLR로 변환할 XLR 수량을 입력하세요.</translation>
+        <source>Enter an amount of AMS to convert to zAMS</source>
+        <translation>zAMS로 변환할 AMS 수량을 입력하세요.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2092,16 +2092,16 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
         <translation>0</translation>
     </message>
     <message>
-        <source>zXLR</source>
-        <translation>zXLR</translation>
+        <source>zAMS</source>
+        <translation>zAMS</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>생성 가능한 수량 :</translation>
     </message>
     <message>
-        <source>0.000 000 00 XLR</source>
-        <translation>0.000 000 00 XLR</translation>
+        <source>0.000 000 00 AMS</source>
+        <translation>0.000 000 00 AMS</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2136,12 +2136,12 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
         <translation>마지막 발행 이후 상태나 메세지</translation>
     </message>
     <message>
-        <source>zXLR Control</source>
-        <translation>zXLR 설정</translation>
+        <source>zAMS Control</source>
+        <translation>zAMS 설정</translation>
     </message>
     <message>
-        <source>zXLR Selected:</source>
-        <translation>선택한 zXLR : </translation>
+        <source>zAMS Selected:</source>
+        <translation>선택한 zAMS : </translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2160,8 +2160,8 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
         <translation>가능한 잔액:</translation>
     </message>
     <message>
-        <source>0 zXLR</source>
-        <translation>0 zXLR</translation>
+        <source>0 zAMS</source>
+        <translation>0 zAMS</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2181,7 +2181,7 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
     </message>
     <message>
         <source>The Solaris address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>XLR를 전송할 Solaris 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
+        <translation>AMS를 전송할 Solaris 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2400,8 +2400,8 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
         <translation>성공적으로 발행됨</translation>
     </message>
     <message>
-        <source> zXLR in </source>
-        <translation> zXLR in </translation>
+        <source> zAMS in </source>
+        <translation> zAMS in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2478,8 +2478,8 @@ Please be patient...</source>
         <translation>제로코인 송금 실패 상태 =</translation>
     </message>
     <message>
-        <source>zXLR Spend #: </source>
-        <translation>zXLR 송금 #: </translation>
+        <source>zAMS Spend #: </source>
+        <translation>zAMS 송금 #: </translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2502,8 +2502,8 @@ Please be patient...</source>
         <translation>주소:</translation>
     </message>
     <message>
-        <source>zXLR Mint</source>
-        <translation>zXLR 생성</translation>
+        <source>zAMS Mint</source>
+        <translation>zAMS 생성</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -3132,8 +3132,8 @@ Please be patient...</source>
         <translation>UTXO 크기:</translation>
     </message>
     <message>
-        <source>0 XLR</source>
-        <translation>0 XLR</translation>
+        <source>0 AMS</source>
+        <translation>0 AMS</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3184,12 +3184,12 @@ Please be patient...</source>
         <translation>코인 자동으로 선택됨</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uXLRs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXLRs in fee,&lt;br /&gt;while "at least" pays 1000 uXLRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uXLRs로 설정되고,&lt;br /&gt;1000 uXLRs 안에는 최소 "킬로바이트당" 250 uXLRs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uAMSs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uAMSs in fee,&lt;br /&gt;while "at least" pays 1000 uAMSs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uAMSs로 설정되고,&lt;br /&gt;1000 uAMSs 안에는 최소 "킬로바이트당" 250 uAMSs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uXLRs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXLRs in fee,&lt;br /&gt;while "total at least" pays 1000 uXLRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uXLRs로 설정되고,&lt;br /&gt;1000 uXLRs 안에는 전체에서 최소 "킬로바이트당" 250 uXLRs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uAMSs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uAMSs in fee,&lt;br /&gt;while "total at least" pays 1000 uAMSs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uAMSs로 설정되고,&lt;br /&gt;1000 uAMSs 안에는 전체에서 최소 "킬로바이트당" 250 uAMSs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Solaris transactions than the network can process.</source>
@@ -3240,8 +3240,8 @@ Please be patient...</source>
         <translation>&amp;받는 사람 추가</translation>
     </message>
     <message>
-        <source>Anonymized XLR</source>
-        <translation>익명화 XLR</translation>
+        <source>Anonymized AMS</source>
+        <translation>익명화 AMS</translation>
     </message>
     <message>
         <source>SwiftTX</source>
@@ -3961,32 +3961,32 @@ Please be patient...</source>
         <translation>난독화</translation>
     </message>
     <message>
-        <source>Converted XLR to zXLR</source>
-        <translation>zXLR로 변환된 XLR</translation>
+        <source>Converted AMS to zAMS</source>
+        <translation>zAMS로 변환된 AMS</translation>
     </message>
     <message>
-        <source>Spent zXLR</source>
-        <translation>전송된 zXLR</translation>
+        <source>Spent zAMS</source>
+        <translation>전송된 zAMS</translation>
     </message>
     <message>
-        <source>Received XLR from zXLR</source>
-        <translation>zXLR로 전송받은 XLR</translation>
+        <source>Received AMS from zAMS</source>
+        <translation>zAMS로 전송받은 AMS</translation>
     </message>
     <message>
-        <source>Minted Change as zXLR from zXLR Spend</source>
-        <translation>zXLR 전송후 남은 잔돈 zXLR 생성됨</translation>
+        <source>Minted Change as zAMS from zAMS Spend</source>
+        <translation>zAMS 전송후 남은 잔돈 zAMS 생성됨</translation>
     </message>
     <message>
-        <source>Converted zXLR to XLR</source>
-        <translation>zXLR에서 XLR로 변환됨</translation>
+        <source>Converted zAMS to AMS</source>
+        <translation>zAMS에서 AMS로 변환됨</translation>
     </message>
     <message>
         <source>watch-only</source>
         <translation>읽기 전용</translation>
     </message>
     <message>
-        <source>zXLR Accumulator</source>
-        <translation>zXLR 누산기</translation>
+        <source>zAMS Accumulator</source>
+        <translation>zAMS 누산기</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4096,8 +4096,8 @@ Please be patient...</source>
         <translation>마스터노드 보상 </translation>
     </message>
     <message>
-        <source>Received XLR from zXLR</source>
-        <translation>zXLR로 전송받은 XLR</translation>
+        <source>Received AMS from zAMS</source>
+        <translation>zAMS로 전송받은 AMS</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4108,8 +4108,8 @@ Please be patient...</source>
         <translation>제로코인 전송</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zXLR</source>
-        <translation>제로코인 전송, 잔돈은 zXLR</translation>
+        <source>Zerocoin Spend, Change in zAMS</source>
+        <translation>제로코인 전송, 잔돈은 zAMS</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4233,8 +4233,8 @@ Please be patient...</source>
         <translation>코인 전송 </translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 XLR.</source>
-        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 XLR로 제한됩니다.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 AMS.</source>
+        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 AMS로 제한됩니다.</translation>
     </message>
 </context>
 <context>
@@ -4277,10 +4277,10 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>ZXLRControlDialog</name>
+    <name>ZAMSControlDialog</name>
     <message>
-        <source>Select zXLR to Spend</source>
-        <translation>전송할 zXLR 선택</translation>
+        <source>Select zAMS to Spend</source>
+        <translation>전송할 zAMS 선택</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4291,8 +4291,8 @@ Please be patient...</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zXLR</source>
-        <translation>zXLR</translation>
+        <source>zAMS</source>
+        <translation>zAMS</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4304,7 +4304,7 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>solaris-core</name>
+    <name>amsterdamcoin-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = tx 메타 데이터 유지 예 : 계정 소유자 및 지불 요청 정보, 2 = tx 메타 데이터 삭제)</translation>
@@ -4394,12 +4394,12 @@ Please be patient...</source>
         <translation>최고 블록이 변경될 경우 명령을 실행하십시오 (명령 내 %s 는 블록 해시로 대체 되었습니다)</translation>
     </message>
     <message>
-        <source>Fees (in XLR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>이것보다 작은 수수료 (XLR/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in AMS/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>이것보다 작은 수수료 (AMS/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
-        <source>Fees (in XLR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>이것보다 작은 수수료 (XLR/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in AMS/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>이것보다 작은 수수료 (AMS/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4494,10 +4494,10 @@ Please be patient...</source>
         <translation>이 제품은 OpenSSL이 개발한 Open SSL 툴킷 &lt;https://www.openssl.org/&gt; 에서 사용하기 위한 프로젝트 소프트웨어, Eric Young이 개발한 암호화 소프트웨어, Thomas Bernard가 개발한 UPnP 소프트웨어가 포함되어 있습니다.</translation>
     </message>
     <message>
-        <source>To use solarisd, or the -server option to solaris-qt, you must set an rpcpassword in the configuration file:
+        <source>To use amsterdamcoind, or the -server option to amsterdamcoin-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=solarisrpc
+rpcuser=amsterdamcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4526,12 +4526,12 @@ rpcpassword=%s
         <translation>이 트랜잭션를 위해 난독화 표기된 충분한 금액을 찾을 수 없습니다.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 XLR.</source>
-        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 XLR과 일치하지 않음.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 AMS.</source>
+        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 AMS과 일치하지 않음.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 XLR.</source>
-        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 XLR와 같지 않음</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 AMS.</source>
+        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 AMS와 같지 않음</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4834,8 +4834,8 @@ rpcpassword=%s
         <translation>블록을 받아오는데 실패했습니다.</translation>
     </message>
     <message>
-        <source>Fee (in XLR/kB) to add to transactions you send (default: %s)</source>
-        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (XLR/kB) (기본값: %s)</translation>
+        <source>Fee (in AMS/kB) to add to transactions you send (default: %s)</source>
+        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (AMS/kB) (기본값: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>

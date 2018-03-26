@@ -1,2 +1,2 @@
-usr/local/bin/solarisd usr/bin
-usr/local/bin/solaris-cli usr/bin
+usr/local/bin/amsterdamcoind usr/bin
+usr/local/bin/amsterdamcoin-cli usr/bin

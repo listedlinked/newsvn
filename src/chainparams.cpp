@@ -167,20 +167,20 @@ public:
         assert(hashGenesisBlock == uint256("0x00000c393bf1eaf9757be560092cc08a7b1ff0345e874b12521522e27862d7d7"));
         assert(genesis.hashMerkleRoot == uint256("0xa84934befc603b6dc91cd53895bf45cd056b4e7a9562067d7608b94e8704815d"));
 		
-        vSeeds.push_back(CDNSSeedData("solarisnode.dyndns.org", "solarisnode.dyndns.org"));
-		vSeeds.push_back(CDNSSeedData("solarisnode1.dyndns.org", "solarisnode1.dyndns.org"));
-		vSeeds.push_back(CDNSSeedData("solarisnode2.dyndns.org", "solarisnode2.dyndns.org"));
-		vSeeds.push_back(CDNSSeedData("solarisnode3.dyndns.org", "solarisnode3.dyndns.org"));
-		vSeeds.push_back(CDNSSeedData("solarisnode4.dyndns.org", "solarisnode4.dyndns.org"));
-		vSeeds.push_back(CDNSSeedData("solarisnode5.dyndns.org", "solarisnode5.dyndns.org"));
-		vSeeds.push_back(CDNSSeedData("solarisnode6.dyndns.org", "solarisnode6.dyndns.org"));
+        vSeeds.push_back(CDNSSeedData("amsterdamcoinnode.dyndns.org", "amsterdamcoinnode.dyndns.org"));
+		vSeeds.push_back(CDNSSeedData("amsterdamcoinnode1.dyndns.org", "amsterdamcoinnode1.dyndns.org"));
+		vSeeds.push_back(CDNSSeedData("amsterdamcoinnode2.dyndns.org", "amsterdamcoinnode2.dyndns.org"));
+		vSeeds.push_back(CDNSSeedData("amsterdamcoinnode3.dyndns.org", "amsterdamcoinnode3.dyndns.org"));
+		vSeeds.push_back(CDNSSeedData("amsterdamcoinnode4.dyndns.org", "amsterdamcoinnode4.dyndns.org"));
+		vSeeds.push_back(CDNSSeedData("amsterdamcoinnode5.dyndns.org", "amsterdamcoinnode5.dyndns.org"));
+		vSeeds.push_back(CDNSSeedData("amsterdamcoinnode6.dyndns.org", "amsterdamcoinnode6.dyndns.org"));
 		
-		vSeeds.push_back(CDNSSeedData("node1.solariscoin.com", "node1.solariscoin.com"));
-		vSeeds.push_back(CDNSSeedData("node2.solariscoin.com", "node2.solariscoin.com"));
-		vSeeds.push_back(CDNSSeedData("node3.solariscoin.com", "node3.solariscoin.com"));
-		vSeeds.push_back(CDNSSeedData("node4.solariscoin.com", "node4.solariscoin.com"));
-		vSeeds.push_back(CDNSSeedData("node5.solariscoin.com", "node5.solariscoin.com"));
-		vSeeds.push_back(CDNSSeedData("node6.solariscoin.com", "node6.solariscoin.com"));
+		vSeeds.push_back(CDNSSeedData("node1.amsterdamcoincoin.com", "node1.amsterdamcoincoin.com"));
+		vSeeds.push_back(CDNSSeedData("node2.amsterdamcoincoin.com", "node2.amsterdamcoincoin.com"));
+		vSeeds.push_back(CDNSSeedData("node3.amsterdamcoincoin.com", "node3.amsterdamcoincoin.com"));
+		vSeeds.push_back(CDNSSeedData("node4.amsterdamcoincoin.com", "node4.amsterdamcoincoin.com"));
+		vSeeds.push_back(CDNSSeedData("node5.amsterdamcoincoin.com", "node5.amsterdamcoincoin.com"));
+		vSeeds.push_back(CDNSSeedData("node6.amsterdamcoincoin.com", "node6.amsterdamcoincoin.com"));
 
 		
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63);
@@ -259,18 +259,18 @@ public:
         //assert(hashGenesisBlock == uint256("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "solaris-testnet.seed.fuzzbawls.pw"));
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "solaris-testnet.seed2.fuzzbawls.pw"));
+        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "amsterdamcoin-testnet.seed.fuzzbawls.pw"));
+        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "amsterdamcoin-testnet.seed2.fuzzbawls.pw"));
         vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net"));
         vSeeds.push_back(CDNSSeedData("88.198.192.110", "88.198.192.110"));
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet solaris addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet solaris script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet amsterdamcoin addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet amsterdamcoin script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet solaris BIP32 pubkeys start with 'DRKV'
+        // Testnet amsterdamcoin BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet solaris BIP32 prvkeys start with 'DRKP'
+        // Testnet amsterdamcoin BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet solaris BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet amsterdamcoin BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
         fRequireRPCPassword = true;

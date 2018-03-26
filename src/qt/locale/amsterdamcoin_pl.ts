@@ -148,8 +148,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XLR&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE XLR!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AMS&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE AMS!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -526,8 +526,8 @@
         <translation>Wyślij monety do adresu Solaris</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and solaris: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i solaris:URI)</translation>
+        <source>Request payments (generates QR codes and amsterdamcoin: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i amsterdamcoin:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1217,9 +1217,9 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/solaris-project/solaris-project-translations</source>
+https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/solaris-project/solaris-project-translations </translation>
+https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translations </translation>
     </message>
     <message>
         <source>Connect to the Solaris network through a SOCKS5 proxy.</source>
@@ -2027,14 +2027,14 @@ https://www.transifex.com/solaris-project/solaris-project-translations </transla
     </message>
     </context>
 <context>
-    <name>ZXLRControlDialog</name>
+    <name>ZAMSControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>solaris-core</name>
+    <name>amsterdamcoin-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

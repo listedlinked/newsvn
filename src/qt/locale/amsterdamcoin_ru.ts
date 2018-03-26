@@ -172,7 +172,7 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>Solaris will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XLRs from being stolen by malware infecting your computer.</source>
+        <source>Solaris will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AMSs from being stolen by malware infecting your computer.</source>
         <translation>Solaris сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши Solaris от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
@@ -180,8 +180,8 @@
         <translation>Вы действительно хотите зашифровать свой кошелек?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XLR&lt;/b&gt;!</source>
-        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ XLR&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AMS&lt;/b&gt;!</source>
+        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ AMS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -602,7 +602,7 @@
         <translation>Отправить монеты на Solaris адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and solaris: URIs)</source>
+        <source>Request payments (generates QR codes and amsterdamcoin: URIs)</source>
         <translation>Запросить платежи (генерирует QR-код и Solaris: URI)</translation>
     </message>
     <message>
@@ -610,7 +610,7 @@
         <translation>&amp;Конфиденциальность</translation>
     </message>
     <message>
-        <source>Privacy Action for zXLR and Obfuscation</source>
+        <source>Privacy Action for zAMS and Obfuscation</source>
         <translation>Конфиденциальное действие и обфускация</translation>
     </message>
     <message>
@@ -825,8 +825,8 @@ MultiSend: %1</translation>
         <translation>Текстовая метка</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (solaris.conf).</source>
-        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (solaris.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (amsterdamcoin.conf).</source>
+        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (amsterdamcoin.conf).</translation>
     </message>
 </context>
 <context>
@@ -1516,32 +1516,32 @@ Please check the address and try again.</source>
         <translation>Выберите уровень конфиденциальности.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 XLR</source>
-        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 XLR</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 AMS</source>
+        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 AMS</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 XLR</source>
-        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 XLR</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 AMS</source>
+        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 AMS</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Используйте 16 разных мастернод</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 XLR to anonymize 10000 XLR</source>
-        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 XLR для анонимизации 10000 XLR</translation>
+        <source>This option is the quickest and will cost about ~0.025 AMS to anonymize 10000 AMS</source>
+        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 AMS для анонимизации 10000 AMS</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 XLR to anonymize 10000 XLR</source>
-        <translation>Это средний по скорости вариант и он будет стоить около 0.05 XLR для анонимизации 10000 XLR</translation>
+        <source>This option is moderately fast and will cost about 0.05 AMS to anonymize 10000 AMS</source>
+        <translation>Это средний по скорости вариант и он будет стоить около 0.05 AMS для анонимизации 10000 AMS</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Это самый медленный и безопасный вариант. Максимальная анонимность стоит</translation>
     </message>
     <message>
-        <source>0.1 XLR per 10000 XLR you anonymize.</source>
-        <translation>0.1 XLR за 10000 XLR которые вы собираетесь анонимизировать.</translation>
+        <source>0.1 AMS per 10000 AMS you anonymize.</source>
+        <translation>0.1 AMS за 10000 AMS которые вы собираетесь анонимизировать.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1675,25 +1675,25 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/solaris-project/solaris-project-translations</source>
+https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translations</source>
         <translation>Отсутствует ваш язык или заметили незавершенный перевод? Вы можете помочь нам стать лучше:
-https://www.transifex.com/solaris-project/solaris-project-translations</translation>
+https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Percentage of incoming XLR which get automatically converted to zXLR via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент приходящих XLR, которые автоматически конвертируются в zXLR благодаря Zerocoin протоколу (min: 10%)</translation>
+        <source>Percentage of incoming AMS which get automatically converted to zAMS via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент приходящих AMS, которые автоматически конвертируются в zAMS благодаря Zerocoin протоколу (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zXLR</source>
-        <translation>Процент  авточеканненых zXLR</translation>
+        <source>Percentage of autominted zAMS</source>
+        <translation>Процент  авточеканненых zAMS</translation>
     </message>
     <message>
-        <source>Preferred Automint zXLR Denomination</source>
-        <translation>Предпочитаемый номинал авточеканной  монеты  zXLR</translation>
+        <source>Preferred Automint zAMS Denomination</source>
+        <translation>Предпочитаемый номинал авточеканной  монеты  zAMS</translation>
     </message>
     <message>
         <source>Connect to the Solaris network through a SOCKS5 proxy.</source>
@@ -1827,8 +1827,8 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
         <translation>Вид</translation>
     </message>
     <message>
-        <source>XLR Balances</source>
-        <translation>Баланс XLR</translation>
+        <source>AMS Balances</source>
+        <translation>Баланс AMS</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1891,12 +1891,12 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
         <translation>Расходуемый:</translation>
     </message>
     <message>
-        <source>XLR:</source>
-        <translation>XLR:</translation>
+        <source>AMS:</source>
+        <translation>AMS:</translation>
     </message>
     <message>
-        <source>zXLR:</source>
-        <translation>zXLR:</translation>
+        <source>zAMS:</source>
+        <translation>zAMS:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1934,8 +1934,8 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
         <translation>Неверный адрес оплаты %1</translation>
     </message>
     <message>
-        <source>Cannot start solaris: click-to-pay handler</source>
-        <translation>Не удалось запустить solaris: обработчик click-to-pay </translation>
+        <source>Cannot start amsterdamcoin: click-to-pay handler</source>
+        <translation>Не удалось запустить amsterdamcoin: обработчик click-to-pay </translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Solaris address or malformed URI parameters.</source>
@@ -2020,8 +2020,8 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>XLR which were anonymized via Zerocin Protocol</source>
-        <translation>XLR, который был анонимно использован через Zerocoin протокол</translation>
+        <source>AMS which were anonymized via Zerocin Protocol</source>
+        <translation>AMS, который был анонимно использован через Zerocoin протокол</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2032,8 +2032,8 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
         <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью Solaris после установки соединения, но этот процесс еще не завершен. </translation>
     </message>
     <message>
-        <source>Enter an amount of XLR to convert to zXLR</source>
-        <translation>Введите сумму в XLR для  конвертации в zXLR</translation>
+        <source>Enter an amount of AMS to convert to zAMS</source>
+        <translation>Введите сумму в AMS для  конвертации в zAMS</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2706,8 +2706,8 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
         <translation>Изменить:</translation>
     </message>
     <message>
-        <source>0 XLR</source>
-        <translation>0 XLR</translation>
+        <source>0 AMS</source>
+        <translation>0 AMS</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3198,14 +3198,14 @@ https://www.transifex.com/solaris-project/solaris-project-translations</translat
     </message>
     </context>
 <context>
-    <name>ZXLRControlDialog</name>
+    <name>ZAMSControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>solaris-core</name>
+    <name>amsterdamcoin-core</name>
     <message>
         <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
         <translation>Для SwiftTX требуется как минимум 6 подтверждений, Вам нужно подождать несколько минут и попытаться снова.</translation>

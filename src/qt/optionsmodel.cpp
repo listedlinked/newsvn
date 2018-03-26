@@ -6,7 +6,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/solaris-config.h"
+#include "config/amsterdamcoin-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -62,7 +62,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitcoinUnits::XLR);
+        settings.setValue("nDisplayUnit", BitcoinUnits::AMS);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
@@ -153,7 +153,7 @@ void OptionsModel::Init()
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
     if (settings.contains("nAnonymizeSolarisAmount"))
-        SoftSetArg("-anonymizesolarisamount", settings.value("nAnonymizeSolarisAmount").toString().toStdString());
+        SoftSetArg("-anonymizeamsterdamcoinamount", settings.value("nAnonymizeSolarisAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -164,7 +164,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in solaris.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in amsterdamcoin.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())

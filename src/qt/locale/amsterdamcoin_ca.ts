@@ -168,16 +168,16 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>Solaris will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XLRs from being stolen by malware infecting your computer.</source>
-        <translation>Solaris es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus XLR de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>Solaris will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AMSs from being stolen by malware infecting your computer.</source>
+        <translation>Solaris es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus AMS de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XLR&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES XLRS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AMS&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES AMSS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1142,24 +1142,24 @@
         <translation>Si us plau, selecciona un nivell de privacitat.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 XLR</source>
-        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 XLR</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 AMS</source>
+        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 AMS</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 XLR</source>
-        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 XLR</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 AMS</source>
+        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 AMS</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utilitza 16 masternodes diferents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 XLR to anonymize 10000 XLR</source>
-        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 XLR per anonimitzar 10000 XLR</translation>
+        <source>This option is the quickest and will cost about ~0.025 AMS to anonymize 10000 AMS</source>
+        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 AMS per anonimitzar 10000 AMS</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 XLR to anonymize 10000 XLR</source>
-        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 XLR per anonimitzar 10000 XLR</translation>
+        <source>This option is moderately fast and will cost about 0.05 AMS to anonymize 10000 AMS</source>
+        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 AMS per anonimitzar 10000 AMS</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1271,12 +1271,12 @@
         <translation>Total:</translation>
     </message>
     <message>
-        <source>XLR:</source>
-        <translation>XLR:</translation>
+        <source>AMS:</source>
+        <translation>AMS:</translation>
     </message>
     <message>
-        <source>zXLR:</source>
-        <translation>zXLR:</translation>
+        <source>zAMS:</source>
+        <translation>zAMS:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1304,20 +1304,20 @@
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>ZeroSolaris (zXLR)</source>
-        <translation>ZeroSolaris (zXLR)</translation>
+        <source>ZeroSolaris (zAMS)</source>
+        <translation>ZeroSolaris (zAMS)</translation>
     </message>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zXLR</source>
-        <translation>zXLR</translation>
+        <source>zAMS</source>
+        <translation>zAMS</translation>
     </message>
     <message>
-        <source>0.000 000 00 XLR</source>
-        <translation>0.000 000 00 XLR</translation>
+        <source>0.000 000 00 AMS</source>
+        <translation>0.000 000 00 AMS</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1332,8 +1332,8 @@
         <translation>Import:</translation>
     </message>
     <message>
-        <source>0 zXLR</source>
-        <translation>0 zXLR</translation>
+        <source>0 zAMS</source>
+        <translation>0 zAMS</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1969,7 +1969,7 @@
     </message>
     </context>
 <context>
-    <name>ZXLRControlDialog</name>
+    <name>ZAMSControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantitat</translation>
@@ -1979,12 +1979,12 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zXLR</source>
-        <translation>zXLR</translation>
+        <source>zAMS</source>
+        <translation>zAMS</translation>
     </message>
     </context>
 <context>
-    <name>solaris-core</name>
+    <name>amsterdamcoin-core</name>
     <message>
         <source>Can't mix while sync in progress.</source>
         <translation>No es pot mesclar mentre s'està sincronitzant.</translation>

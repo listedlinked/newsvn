@@ -3,7 +3,7 @@ Solaris Core
 
 Setup
 ---------------------
-[Solaris Core](http://solaris.com/wallet) is the original Solaris client and it builds the backbone of the network. However, it downloads and stores the entire history of Solaris transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Solaris Core](http://amsterdamcoin.com/wallet) is the original Solaris client and it builds the backbone of the network. However, it downloads and stores the entire history of Solaris transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -13,12 +13,12 @@ The following are some helpful notes on how to run Solaris on your native platfo
 
 Unpack the files into a directory and run:
 
-- bin/32/solaris-qt (GUI, 32-bit) or bin/32/solarisd (headless, 32-bit)
-- bin/64/solaris-qt (GUI, 64-bit) or bin/64/solarisd (headless, 64-bit)
+- bin/32/amsterdamcoin-qt (GUI, 32-bit) or bin/32/amsterdamcoind (headless, 32-bit)
+- bin/64/amsterdamcoin-qt (GUI, 64-bit) or bin/64/amsterdamcoind (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run solaris-qt.exe.
+Unpack the files into a directory, and then run amsterdamcoin-qt.exe.
 
 ### OSX
 
@@ -28,8 +28,8 @@ Drag Solaris-Qt to your applications folder, and then run Solaris-Qt.
 
 * See the documentation at the [Solaris Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Solaris Forum](http://forum.solaris.com/).
-* Join one of our Slack groups [Solaris Slack Groups](https://solaris.com/slack-logins/).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Solaris Forum](http://forum.amsterdamcoin.com/).
+* Join one of our Slack groups [Solaris Slack Groups](https://amsterdamcoin.com/slack-logins/).
 
 Building
 ---------------------
@@ -55,8 +55,8 @@ The Solaris repo's [root README](https://github.com/Solaris-Project/Solaris/blob
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Solaris](http://forum.solaris.com/) forum.
-* Join the [Solaris-Dev](https://solaris-dev.slack.com/) Slack group ([Sign-Up](https://solaris-dev.herokuapp.com/)).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Solaris](http://forum.amsterdamcoin.com/) forum.
+* Join the [Solaris-Dev](https://amsterdamcoin-dev.slack.com/) Slack group ([Sign-Up](https://amsterdamcoin-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

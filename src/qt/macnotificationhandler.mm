@@ -15,7 +15,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.solaris.Solaris-Qt";
+        return @"io.amsterdamcoin.Solaris-Qt";
     } else {
         return [self __bundleIdentifier];
     }

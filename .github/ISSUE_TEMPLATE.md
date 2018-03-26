@@ -1,7 +1,7 @@
 <!--- Remove this description and sections that do not apply -->
 
 This issue tracker is only for technical issues related to Solaris Core.
-General Solaris questions and/or support requests and are best directed to the [Solaris Slack](http://solaris.slack.com).
+General Solaris questions and/or support requests and are best directed to the [Solaris Slack](http://amsterdamcoin.slack.com).
 
 ### Describe the issue
 

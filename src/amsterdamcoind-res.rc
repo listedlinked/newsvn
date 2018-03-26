@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Solaris"
-            VALUE "FileDescription",    "solarisd (OSS daemon/client for Solaris)"
+            VALUE "FileDescription",    "amsterdamcoind (OSS daemon/client for Solaris)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "solarisd"
+            VALUE "InternalName",       "amsterdamcoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "solarisd.exe"
-            VALUE "ProductName",        "solarisd"
+            VALUE "OriginalFilename",   "amsterdamcoind.exe"
+            VALUE "ProductName",        "amsterdamcoind"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

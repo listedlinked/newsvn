@@ -58,8 +58,8 @@ Value obfuscation(const Array& params, bool fHelp)
     
     if (fHelp || params.size() == 0)
         throw runtime_error(
-            "obfuscation <solarisaddress> <amount>\n"
-            "solarisaddress, reset, or auto (AutoDenominate)"
+            "obfuscation <amsterdamcoinaddress> <amount>\n"
+            "amsterdamcoinaddress, reset, or auto (AutoDenominate)"
             "<amount> is a real and will be rounded to the next 0.1" +
             HelpRequiringPassphrase());
 
@@ -80,8 +80,8 @@ Value obfuscation(const Array& params, bool fHelp)
 
     if (params.size() != 2)
         throw runtime_error(
-            "obfuscation <solarisaddress> <amount>\n"
-            "solarisaddress, denominate, or auto (AutoDenominate)"
+            "obfuscation <amsterdamcoinaddress> <amount>\n"
+            "amsterdamcoinaddress, denominate, or auto (AutoDenominate)"
             "<amount> is a real and will be rounded to the next 0.1" +
             HelpRequiringPassphrase());
 
@@ -155,7 +155,7 @@ Value masternode(const Array& params, bool fHelp)
             "  debug        - Print masternode status\n"
             "  genkey       - Generate new masternodeprivkey\n"
             "  outputs      - Print masternode compatible outputs\n"
-            "  start        - Start masternode configured in solaris.conf\n"
+            "  start        - Start masternode configured in amsterdamcoin.conf\n"
             "  start-alias  - Start single masternode by assigned alias configured in masternode.conf\n"
             "  start-<mode> - Start masternodes configured in masternode.conf (<mode>: 'all', 'missing', 'disabled')\n"
             "  status       - Print masternode status information\n"

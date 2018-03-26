@@ -320,35 +320,35 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
         /* Solaris features */
-        {"solaris", "masternode", &masternode, true, true, false},
-        {"solaris", "listmasternodes", &listmasternodes, true, true, false},
-        {"solaris", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"solaris", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"solaris", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"solaris", "masternodedebug", &masternodedebug, true, true, false},
-        {"solaris", "startmasternode", &startmasternode, true, true, false},
-        {"solaris", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"solaris", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"solaris", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"solaris", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"solaris", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"solaris", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"solaris", "mnbudget", &mnbudget, true, true, false},
-        {"solaris", "preparebudget", &preparebudget, true, true, false},
-        {"solaris", "submitbudget", &submitbudget, true, true, false},
-        {"solaris", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"solaris", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"solaris", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"solaris", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"solaris", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"solaris", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"solaris", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"solaris", "checkbudgets", &checkbudgets, true, true, false},
-        {"solaris", "mnsync", &mnsync, true, true, false},
-        {"solaris", "spork", &spork, true, true, false},
-        {"solaris", "getpoolinfo", &getpoolinfo, true, true, false},
+        {"amsterdamcoin", "masternode", &masternode, true, true, false},
+        {"amsterdamcoin", "listmasternodes", &listmasternodes, true, true, false},
+        {"amsterdamcoin", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"amsterdamcoin", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"amsterdamcoin", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"amsterdamcoin", "masternodedebug", &masternodedebug, true, true, false},
+        {"amsterdamcoin", "startmasternode", &startmasternode, true, true, false},
+        {"amsterdamcoin", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"amsterdamcoin", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"amsterdamcoin", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"amsterdamcoin", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"amsterdamcoin", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"amsterdamcoin", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"amsterdamcoin", "mnbudget", &mnbudget, true, true, false},
+        {"amsterdamcoin", "preparebudget", &preparebudget, true, true, false},
+        {"amsterdamcoin", "submitbudget", &submitbudget, true, true, false},
+        {"amsterdamcoin", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"amsterdamcoin", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"amsterdamcoin", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"amsterdamcoin", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"amsterdamcoin", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"amsterdamcoin", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"amsterdamcoin", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"amsterdamcoin", "checkbudgets", &checkbudgets, true, true, false},
+        {"amsterdamcoin", "mnsync", &mnsync, true, true, false},
+        {"amsterdamcoin", "spork", &spork, true, true, false},
+        {"amsterdamcoin", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"solaris", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"amsterdamcoin", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -627,10 +627,10 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use solarisd, or the -server option to solaris-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use amsterdamcoind, or the -server option to amsterdamcoin-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=solarisrpc\n"
+                                               "rpcuser=amsterdamcoinrpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
@@ -1087,7 +1087,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> solaris-cli " + methodname + " " + args + "\n";
+    return "> amsterdamcoin-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

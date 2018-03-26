@@ -28,7 +28,7 @@
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap resource="../solaris.qrc">:/images/about</pixmap>
+      <pixmap resource="../amsterdamcoin.qrc">:/images/about</pixmap>
      </property>
     </widget>
    </item>
@@ -97,7 +97,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../solaris.qrc"/>
+  <include location="../amsterdamcoin.qrc"/>
  </resources>
  <connections>
   <connection>

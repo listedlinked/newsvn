@@ -38,12 +38,12 @@
         <file alias="tx_input">res/icons/tx_input.png</file>
         <file alias="tx_output">res/icons/tx_output.png</file>
         <file alias="tx_inout">res/icons/tx_inout.png</file>
-        <file alias="unit_solaris">res/icons/unit_solaris.png</file>
-        <file alias="unit_msolaris">res/icons/unit_msolaris.png</file>
-        <file alias="unit_usolaris">res/icons/unit_usolaris.png</file>
-        <file alias="unit_tsolaris">res/icons/unit_tsolaris.png</file>
-        <file alias="unit_tmsolaris">res/icons/unit_tmsolaris.png</file>
-        <file alias="unit_tusolaris">res/icons/unit_tusolaris.png</file>
+        <file alias="unit_amsterdamcoin">res/icons/unit_amsterdamcoin.png</file>
+        <file alias="unit_mamsterdamcoin">res/icons/unit_mamsterdamcoin.png</file>
+        <file alias="unit_uamsterdamcoin">res/icons/unit_uamsterdamcoin.png</file>
+        <file alias="unit_tamsterdamcoin">res/icons/unit_tamsterdamcoin.png</file>
+        <file alias="unit_tmamsterdamcoin">res/icons/unit_tmamsterdamcoin.png</file>
+        <file alias="unit_tuamsterdamcoin">res/icons/unit_tuamsterdamcoin.png</file>
         <file alias="lock_closed">res/icons/lock_closed.png</file>
         <file alias="lock_open">res/icons/lock_open.png</file>
         <file alias="key">res/icons/key.png</file>
@@ -59,7 +59,7 @@
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
-        <file alias="solaris_logo_horizontal">res/images/solaris_logo_horizontal.png</file>
+        <file alias="amsterdamcoin_logo_horizontal">res/images/amsterdamcoin_logo_horizontal.png</file>
         <file alias="downArrow">res/images/downArrow.png</file>
         <file alias="downArrow_small">res/images/downArrow_small.png</file>
         <file alias="upArrow_small">res/images/upArrow_small.png</file>

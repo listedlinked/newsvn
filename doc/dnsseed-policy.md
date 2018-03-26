@@ -46,7 +46,7 @@ related to the DNS seed operation.
 If these expectations cannot be satisfied the operator should
 discontinue providing services and contact the active Solaris
 Core development team as well as posting on the
-[Solaris Forum](https://forum.solaris.com).
+[Solaris Forum](https://forum.amsterdamcoin.com).
 
 Behavior outside of these expectations may be reasonable in some
 situations but should be discussed in public in advance.

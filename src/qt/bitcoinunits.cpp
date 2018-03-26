@@ -20,18 +20,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(XLR);
-    unitlist.append(mXLR);
-    unitlist.append(uXLR);
+    unitlist.append(AMS);
+    unitlist.append(mAMS);
+    unitlist.append(uAMS);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case XLR:
-    case mXLR:
-    case uXLR:
+    case AMS:
+    case mAMS:
+    case uAMS:
         return true;
     default:
         return false;
@@ -41,12 +41,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case XLR:
-        return QString("solaris");
-    case mXLR:
-        return QString("msolaris");
-    case uXLR:
-        return QString::fromUtf8("usolaris");
+    case AMS:
+        return QString("amsterdamcoin");
+    case mAMS:
+        return QString("mamsterdamcoin");
+    case uAMS:
+        return QString::fromUtf8("uamsterdamcoin");
     default:
         return QString("???");
     }
@@ -56,23 +56,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case XLR:
-            return QString("XLR");
-        case mXLR:
-            return QString("mXLR");
-        case uXLR:
-            return QString::fromUtf8("μXLR");
+        case AMS:
+            return QString("AMS");
+        case mAMS:
+            return QString("mAMS");
+        case uAMS:
+            return QString::fromUtf8("μAMS");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case XLR:
-            return QString("tXLR");
-        case mXLR:
-            return QString("mtXLR");
-        case uXLR:
-            return QString::fromUtf8("μtXLR");
+        case AMS:
+            return QString("tAMS");
+        case mAMS:
+            return QString("mtAMS");
+        case uAMS:
+            return QString::fromUtf8("μtAMS");
         default:
             return QString("???");
         }
@@ -83,23 +83,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case XLR:
-            return QString("XLR");
-        case mXLR:
-            return QString("Milli-XLR (1 / 1" THIN_SP_UTF8 "000)");
-        case uXLR:
-            return QString("Micro-XLR (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case AMS:
+            return QString("AMS");
+        case mAMS:
+            return QString("Milli-AMS (1 / 1" THIN_SP_UTF8 "000)");
+        case uAMS:
+            return QString("Micro-AMS (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case XLR:
-            return QString("TestXLRs");
-        case mXLR:
-            return QString("Milli-TestXLR (1 / 1" THIN_SP_UTF8 "000)");
-        case uXLR:
-            return QString("Micro-TestXLR (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case AMS:
+            return QString("TestAMSs");
+        case mAMS:
+            return QString("Milli-TestAMS (1 / 1" THIN_SP_UTF8 "000)");
+        case uAMS:
+            return QString("Micro-TestAMS (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +109,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case XLR:
+    case AMS:
         return 100000000;
-    case mXLR:
+    case mAMS:
         return 100000;
-    case uXLR:
+    case uAMS:
         return 100;
     default:
         return 100000000;
@@ -123,11 +123,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case XLR:
+    case AMS:
         return 8;
-    case mXLR:
+    case mAMS:
         return 5;
-    case uXLR:
+    case uAMS:
         return 2;
     default:
         return 0;

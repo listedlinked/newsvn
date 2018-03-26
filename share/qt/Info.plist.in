@@ -32,7 +32,7 @@
   <string>Solaris-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>io.solaris.Solaris-Qt</string>
+  <string>io.amsterdamcoin.Solaris-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,10 +40,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.solaris.SolarisPayment</string>
+      <string>io.amsterdamcoin.SolarisPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>solaris</string>
+        <string>amsterdamcoin</string>
       </array>
     </dict>
   </array>
@@ -52,7 +52,7 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.solaris.paymentrequest</string>
+      <string>io.amsterdamcoin.paymentrequest</string>
       <key>UTTypeDescription</key>
       <string>Solaris payment request</string>
       <key>UTTypeConformsTo</key>
@@ -62,10 +62,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-solaris-payment-request</string>
+        <string>application/x-amsterdamcoin-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>solarispaymentrequest</string>
+          <string>amsterdamcoinpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.solaris.paymentrequest</string>
+        <string>io.amsterdamcoin.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

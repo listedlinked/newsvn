@@ -6,7 +6,7 @@
 #define BITCOIN_NETBASE_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/solaris-config.h"
+#include "config/amsterdamcoin-config.h"
 #endif
 
 #include "compat.h"

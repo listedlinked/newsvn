@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build solarisd (headless client) for OSX.
+This guide will show you how to build amsterdamcoind (headless client) for OSX.
 
 Notes
 -----
@@ -40,14 +40,14 @@ Instructions: Homebrew
 
         brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf qt5 libzmq
 
-### Building `solarisd`
+### Building `amsterdamcoind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
         git clone https://github.com/Solaris-Project/Solaris.git
         cd Solaris
 
-2.  Build solarisd:
+2.  Build amsterdamcoind:
 
         ./autogen.sh
         ./configure --with-gui=qt5
@@ -57,7 +57,7 @@ Instructions: Homebrew
 
         make check
 
-4.  (Optional) You can also install solarisd to your path:
+4.  (Optional) You can also install amsterdamcoind to your path:
 
         make install
 
@@ -69,7 +69,7 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 1. Make sure you installed everything through homebrew mentioned above
 2. Do a proper ./configure --with-gui=qt5 --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "solaris-qt" as project name, enter src/qt as location
+4. Enter "amsterdamcoin-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
@@ -79,11 +79,11 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `solarisd` for your own use.
+You can ignore this section if you are building `amsterdamcoind` for your own use.
 
-solarisd/solaris-cli binaries are not included in the solaris-Qt.app bundle.
+amsterdamcoind/amsterdamcoin-cli binaries are not included in the amsterdamcoin-Qt.app bundle.
 
-If you are building `solarisd` or `solaris-qt` for others, your build machine should be set up
+If you are building `amsterdamcoind` or `amsterdamcoin-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -98,14 +98,14 @@ bundle is packaged and signed to create the .dmg disk image that is distributed.
 Running
 -------
 
-It's now available at `./solarisd`, provided that you are still in the `src`
+It's now available at `./amsterdamcoind`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./solarisd` to get the filename where it should be put, or just try these
+Run `./amsterdamcoind` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=solarisrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Solaris/solaris.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Solaris/solaris.conf"
+    echo -e "rpcuser=amsterdamcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Solaris/amsterdamcoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Solaris/amsterdamcoin.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
@@ -116,6 +116,6 @@ you can monitor its process by looking at the debug.log file, like this:
 Other commands:
 -------
 
-    ./solarisd -daemon # to start the solaris daemon.
-    ./solaris-cli --help  # for a list of command-line options.
-    ./solaris-cli help    # When the daemon is running, to get a list of RPC commands
+    ./amsterdamcoind -daemon # to start the amsterdamcoin daemon.
+    ./amsterdamcoin-cli --help  # for a list of command-line options.
+    ./amsterdamcoin-cli help    # When the daemon is running, to get a list of RPC commands

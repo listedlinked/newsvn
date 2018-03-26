@@ -168,7 +168,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../solaris.qrc"/>
+  <include location="../amsterdamcoin.qrc"/>
  </resources>
  <connections/>
 </ui>

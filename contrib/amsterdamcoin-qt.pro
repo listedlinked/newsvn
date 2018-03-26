@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/solaris-config.h \
+           src/amsterdamcoin-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/solaris-config.h \
+           src/config/amsterdamcoin-config.h \
            src/crypto/common.h \
 		   src/crypto/scrypt.h \
            src/crypto/hmac_sha256.h \
@@ -339,7 +339,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/solaris.moc \
+           src/qt/amsterdamcoin.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -380,9 +380,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/solaris-cli.cpp \
-           src/solaris-tx.cpp \
-           src/solaris.cpp \
+           src/amsterdamcoin-cli.cpp \
+           src/amsterdamcoin-tx.cpp \
+           src/amsterdamcoin.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -485,8 +485,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/solaris.cpp \
-           src/qt/solarisstrings.cpp \
+           src/qt/amsterdamcoin.cpp \
+           src/qt/amsterdamcoinstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -564,7 +564,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_solaris.cpp \
+           src/test/test_amsterdamcoin.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -655,21 +655,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/solaris.qrc src/qt/solaris_locale.qrc
+RESOURCES += src/qt/amsterdamcoin.qrc src/qt/amsterdamcoin_locale.qrc
 
-TRANSLATIONS += src/qt/locale/solaris_bg.ts \
-                src/qt/locale/solaris_de.ts \
-                src/qt/locale/solaris_en.ts \
-                src/qt/locale/solaris_es.ts \
-                src/qt/locale/solaris_fi.ts \
-                src/qt/locale/solaris_fr.ts \
-                src/qt/locale/solaris_it.ts \
-                src/qt/locale/solaris_ja.ts \
-                src/qt/locale/solaris_pl.ts \
-                src/qt/locale/solaris_pt.ts \
-                src/qt/locale/solaris_ru.ts \
-                src/qt/locale/solaris_sk.ts \
-                src/qt/locale/solaris_sv.ts \
-                src/qt/locale/solaris_vi.ts \
-                src/qt/locale/solaris_zh_CN.ts \
-                src/qt/locale/solaris_zh_TW.ts
+TRANSLATIONS += src/qt/locale/amsterdamcoin_bg.ts \
+                src/qt/locale/amsterdamcoin_de.ts \
+                src/qt/locale/amsterdamcoin_en.ts \
+                src/qt/locale/amsterdamcoin_es.ts \
+                src/qt/locale/amsterdamcoin_fi.ts \
+                src/qt/locale/amsterdamcoin_fr.ts \
+                src/qt/locale/amsterdamcoin_it.ts \
+                src/qt/locale/amsterdamcoin_ja.ts \
+                src/qt/locale/amsterdamcoin_pl.ts \
+                src/qt/locale/amsterdamcoin_pt.ts \
+                src/qt/locale/amsterdamcoin_ru.ts \
+                src/qt/locale/amsterdamcoin_sk.ts \
+                src/qt/locale/amsterdamcoin_sv.ts \
+                src/qt/locale/amsterdamcoin_vi.ts \
+                src/qt/locale/amsterdamcoin_zh_CN.ts \
+                src/qt/locale/amsterdamcoin_zh_TW.ts

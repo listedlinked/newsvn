@@ -19,10 +19,10 @@ BEGIN
             VALUE "CompanyName",        "Solaris"
             VALUE "FileDescription",    "Solaris-cli (OSS RPC client for Solaris)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "solaris-cli"
+            VALUE "InternalName",       "amsterdamcoin-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "solaris-cli.exe"
+            VALUE "OriginalFilename",   "amsterdamcoin-cli.exe"
             VALUE "ProductName",        "Solaris-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END

@@ -6,7 +6,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/solaris-config.h"
+#include "config/amsterdamcoin-config.h"
 #endif
 
 #include "util.h"
