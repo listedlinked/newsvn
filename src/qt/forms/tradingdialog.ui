@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="AMSSupply">
+    <widget class="QLabel" name="XLRSupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="AMSDemand">
+    <widget class="QLabel" name="XLRDemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyAMS">
+    <widget class="QPushButton" name="BuyXLR">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -442,10 +442,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy AMS</string>
+      <string>Buy XLR</string>
      </property>
      <property name="icon">
-      <iconset resource="../amsterdamcoin.qrc">
+      <iconset resource="../solaris.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -512,7 +512,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>AMS</string>
+      <string>XLR</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1704,10 +1704,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>AMS</string>
+      <string>XLR</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputAMS">
+    <widget class="QLineEdit" name="UnitsInputXLR">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellAMSBTN">
+    <widget class="QPushButton" name="SellXLRBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1751,10 +1751,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell AMS</string>
+      <string>Sell XLR</string>
      </property>
      <property name="icon">
-      <iconset resource="../amsterdamcoin">
+      <iconset resource="../solaris">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -1777,12 +1777,12 @@
          </font>
         </property>
         <property name="text">
-         <string>AMS Available:</string>
+         <string>XLR Available:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="AMSAvailableLabel">
+       <widget class="QLabel" name="XLRAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelAMS">
+       <widget class="QLabel" name="labelXLR">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2221,7 +2221,7 @@
          </font>
         </property>
         <property name="text">
-         <string>AMS</string>
+         <string>XLR</string>
         </property>
        </widget>
       </item>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="AMSBalanceLabel">
+    <widget class="QLabel" name="XLRBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>AMS Balance:</string>
+      <string>XLR Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="AMSAvailableLabel_2">
+    <widget class="QLabel" name="XLRAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2813,7 +2813,7 @@
       </font>
      </property>
      <property name="text">
-      <string>AMS Available:</string>
+      <string>XLR Available:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -2832,10 +2832,10 @@
       </font>
      </property>
      <property name="text">
-      <string>AMS Pending:</string>
+      <string>XLR Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="AMSPendingLabel">
+    <widget class="QLabel" name="XLRPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2928,7 +2928,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bittrex AMS Deposit Address:</string>
+      <string>Bittrex XLR Deposit Address:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="GenDepositBTN">
@@ -2941,10 +2941,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate AmsterdamCoin Deposit Address</string>
+      <string>Generate Solaris Deposit Address</string>
      </property>
      <property name="icon">
-      <iconset resource="../amsterdamcoin.qrc">
+      <iconset resource="../solaris.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3155,7 +3155,7 @@
        <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertAmsterdamCoin">
+     <widget class="QPushButton" name="btnConvertSolaris">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -3206,7 +3206,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../amsterdamcoin.qrc">:/icons/transaction_1</pixmap>
+       <pixmap resource="../solaris.qrc">:/icons/transaction_1</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3253,7 +3253,7 @@
       <string>Update API Keys</string>
      </property>
      <property name="icon">
-      <iconset resource="../amsterdamcoin.qrc">
+      <iconset resource="../solaris.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3408,7 +3408,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../amsterdamcoin.qrc"/>
+  <include location="../solaris.qrc"/>
  </resources>
  <connections/>
 </ui>

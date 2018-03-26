@@ -17,7 +17,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/amsterdamcoin-project/amsterdamcoin
+url=https://github.com/solaris-project/solaris
 proc=2
 mem=2000
 lxc=true
@@ -31,7 +31,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the amsterdamcoin, gitian-builder, gitian.sigs, and amsterdamcoin-detached-sigs.
+Run this script from the directory containing the solaris, gitian-builder, gitian.sigs, and solaris-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -39,12 +39,12 @@ version		Version number, commit, or branch to build. If building a commit or bra
 
 Options:
 -c|--commit	Indicate that the version argument is for a commit or branch
--u|--url	Specify the URL of the repository. Default is https://github.com/amsterdamcoin-project/amsterdamcoin
+-u|--url	Specify the URL of the repository. Default is https://github.com/solaris-project/solaris
 -v|--verify 	Verify the gitian build
 -b|--build	Do a gitian build
 -s|--sign	Make signed binaries for Windows and Mac OSX
 -B|--buildsign	Build both signed and unsigned binaries
--o|--os		Specify which Operating Systems the build is for. Default is lwx. l for linux, w for windows, x for osx
+-o|--os		Specify which Operating Systems the build is for. Default is lwx. l for linux, w for windows, x for osx, a for aarch64
 -j		Number of processes to use. Default 2
 -m		Memory to allocate in MiB. Default 2000
 --kvm           Use KVM instead of LXC
@@ -92,6 +92,7 @@ while :; do
 		linux=false
 		windows=false
 		osx=false
+		aarch64=false
 		if [[ "$2" = *"l"* ]]
 		then
 		    linux=true
@@ -104,9 +105,13 @@ while :; do
 		then
 		    osx=true
 		fi
+		if [[ "$2" = *"a"* ]]
+		then
+		    aarch64=true
+		fi
 		shift
 	    else
-		echo 'Error: "--os" requires an argument containing an l (for linux), w (for windows), or x (for Mac OSX)\n'
+		echo 'Error: "--os" requires an argument containing an l (for linux), w (for windows), x (for Mac OSX), or a (for aarch64)\n'
 		exit 1
 	    fi
 	    ;;
@@ -232,8 +237,8 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/amsterdamcoin-project/gitian.sigs.git
-    git clone https://github.com/amsterdamcoin-project/amsterdamcoin-detached-sigs.git
+    git clone https://github.com/solaris-project/gitian.sigs.git
+    git clone https://github.com/solaris-project/solaris-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
     if [[ -n "$USE_LXC" ]]
@@ -247,7 +252,7 @@ then
 fi
 
 # Set up build
-pushd ./amsterdamcoin
+pushd ./solaris
 git fetch
 git checkout ${COMMIT}
 popd
@@ -256,7 +261,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./amsterdamcoin-binaries/${VERSION}
+	mkdir -p ./solaris-binaries/${VERSION}
 
 	# Build Dependencies
 	echo ""
@@ -266,7 +271,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../amsterdamcoin/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../solaris/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -274,9 +279,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit amsterdamcoin=${COMMIT} --url amsterdamcoin=${url} ../amsterdamcoin/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../amsterdamcoin/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/amsterdamcoin-*.tar.gz build/out/src/amsterdamcoin-*.tar.gz ../amsterdamcoin-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit solaris=${COMMIT} --url solaris=${url} ../solaris/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../solaris/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/solaris-*.tar.gz build/out/src/solaris-*.tar.gz ../solaris-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -284,10 +289,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit amsterdamcoin=${COMMIT} --url amsterdamcoin=${url} ../amsterdamcoin/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../amsterdamcoin/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/amsterdamcoin-*-win-unsigned.tar.gz inputs/amsterdamcoin-win-unsigned.tar.gz
-	    mv build/out/amsterdamcoin-*.zip build/out/amsterdamcoin-*.exe ../amsterdamcoin-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit solaris=${COMMIT} --url solaris=${url} ../solaris/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../solaris/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/solaris-*-win-unsigned.tar.gz inputs/solaris-win-unsigned.tar.gz
+	    mv build/out/solaris-*.zip build/out/solaris-*.exe ../solaris-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -295,11 +300,20 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit amsterdamcoin=${COMMIT} --url amsterdamcoin=${url} ../amsterdamcoin/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../amsterdamcoin/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/amsterdamcoin-*-osx-unsigned.tar.gz inputs/amsterdamcoin-osx-unsigned.tar.gz
-	    mv build/out/amsterdamcoin-*.tar.gz build/out/amsterdamcoin-*.dmg ../amsterdamcoin-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit solaris=${COMMIT} --url solaris=${url} ../solaris/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../solaris/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/solaris-*-osx-unsigned.tar.gz inputs/solaris-osx-unsigned.tar.gz
+	    mv build/out/solaris-*.tar.gz build/out/solaris-*.dmg ../solaris-binaries/${VERSION}
 	fi
+	# AArch64
+	if [[ $aarch64 = true ]]
+	then
+	    echo ""
+	    echo "Compiling ${VERSION} AArch64"
+	    echo ""
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit solaris=${COMMIT} --url solaris=${url} ../solaris/contrib/gitian-descriptors/gitian-aarch64.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../solaris/contrib/gitian-descriptors/gitian-aarch64.yml
+	    mv build/out/solaris-*.tar.gz build/out/src/solaris-*.tar.gz ../solaris-binaries/${VERSION}
 	popd
 
         if [[ $commitFiles = true ]]
@@ -310,6 +324,7 @@ then
             echo ""
             pushd gitian.sigs
             git add ${VERSION}-linux/${SIGNER}
+            git add ${VERSION}-aarch64/${SIGNER}
             git add ${VERSION}-win-unsigned/${SIGNER}
             git add ${VERSION}-osx-unsigned/${SIGNER}
             git commit -a -m "Add ${VERSION} unsigned sigs for ${SIGNER}"
@@ -325,27 +340,32 @@ then
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../amsterdamcoin/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../solaris/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../amsterdamcoin/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../solaris/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../amsterdamcoin/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../solaris/contrib/gitian-descriptors/gitian-osx.yml
+	# AArch64
+	echo ""
+	echo "Verifying v${VERSION} AArch64"
+	echo ""
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../solaris/contrib/gitian-descriptors/gitian-aarch64.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../amsterdamcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../solaris/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../amsterdamcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../solaris/contrib/gitian-descriptors/gitian-osx-signer.yml
 	popd
 fi
 
@@ -360,10 +380,10 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../amsterdamcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../amsterdamcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/amsterdamcoin-*win64-setup.exe ../amsterdamcoin-binaries/${VERSION}
-	    mv build/out/amsterdamcoin-*win32-setup.exe ../amsterdamcoin-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../solaris/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../solaris/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/solaris-*win64-setup.exe ../solaris-binaries/${VERSION}
+	    mv build/out/solaris-*win32-setup.exe ../solaris-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -371,9 +391,9 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../amsterdamcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../amsterdamcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/amsterdamcoin-osx-signed.dmg ../amsterdamcoin-binaries/${VERSION}/amsterdamcoin-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../solaris/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../solaris/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/solaris-osx-signed.dmg ../solaris-binaries/${VERSION}/solaris-${VERSION}-osx.dmg
 	fi
 	popd
 

@@ -43,8 +43,9 @@ public:
         ThreadsScriptVerif,  // int
         DatabaseCache,       // int
         SpendZeroConfChange, // bool
-        ObfuscationRounds,   // int
-        AnonymizeAmsterdamCoinAmount, //int
+        ZeromintPercentage,  // int
+        ZeromintPrefDenom,   // int
+        AnonymizeSolarisAmount, //int
         ShowMasternodesTab,  // bool
         Listen,              // bool
         OptionIDRowCount,
@@ -89,8 +90,9 @@ private:
 
 signals:
     void displayUnitChanged(int unit);
-    void obfuscationRoundsChanged(int);
-    void anonymizeAmsterdamCoinAmountChanged(int);
+    void zeromintPercentageChanged(int);
+    void preferredDenomChanged(int);
+    void anonymizeSolarisAmountChanged(int);
     void coinControlFeaturesChanged(bool);
 };
 

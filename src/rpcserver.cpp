@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The AmsterdamCoin developers
+// Copyright (c) 2015-2017 The AmsterdamCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -94,7 +94,7 @@ static inline int64_t roundint64(double d)
 CAmount AmountFromValue(const Value& value)
 {
     double dAmount = value.get_real();
-    if (dAmount <= 0.0 || dAmount > 100000000.0)
+    if (dAmount <= 0.0 || dAmount > 21000000.0)
         throw JSONRPCError(RPC_TYPE_ERROR, "Invalid amount");
     CAmount nAmount = roundint64(dAmount * COIN);
     if (!MoneyRange(nAmount))
@@ -134,6 +134,24 @@ vector<unsigned char> ParseHexV(const Value& v, string strName)
 vector<unsigned char> ParseHexO(const Object& o, string strKey)
 {
     return ParseHexV(find_value(o, strKey), strKey);
+}
+
+int ParseInt(const Object& o, string strKey)
+{
+    const Value& v = find_value(o, strKey);
+    if (v.type() != int_type)
+        throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, " + strKey + "is not an int");
+
+    return v.get_int();
+}
+
+bool ParseBool(const Object& o, string strKey)
+{
+    const Value& v = find_value(o, strKey);
+    if (v.type() != bool_type)
+        throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, " + strKey + "is not a bool");
+
+    return v.get_bool();
 }
 
 
@@ -220,10 +238,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop AmsterdamCoin server.");
+            "\nStop Solaris server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "AmsterdamCoin server stopping";
+    return "Solaris server stopping";
 }
 
 
@@ -264,6 +282,7 @@ static const CRPCCommand vRPCCommands[] =
         {"blockchain", "verifychain", &verifychain, true, false, false},
         {"blockchain", "invalidateblock", &invalidateblock, true, true, false},
         {"blockchain", "reconsiderblock", &reconsiderblock, true, true, false},
+        {"getinvalid", "getinvalid", &getinvalid, true, true, false},
 
         /* Mining */
         {"mining", "getblocktemplate", &getblocktemplate, true, false, false},
@@ -300,16 +319,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* AmsterdamCoin features */
-        {"amsterdamcoin", "masternode", &masternode, true, true, false},
-        {"amsterdamcoin", "masternodelist", &masternodelist, true, true, false},
-        {"amsterdamcoin", "mnbudget", &mnbudget, true, true, false},
-        {"amsterdamcoin", "mnbudgetvoteraw", &mnbudgetvoteraw, true, true, false},
-        {"amsterdamcoin", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"amsterdamcoin", "mnsync", &mnsync, true, true, false},
-        {"amsterdamcoin", "spork", &spork, true, true, false},
+        /* Solaris features */
+        {"solaris", "masternode", &masternode, true, true, false},
+        {"solaris", "listmasternodes", &listmasternodes, true, true, false},
+        {"solaris", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"solaris", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"solaris", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"solaris", "masternodedebug", &masternodedebug, true, true, false},
+        {"solaris", "startmasternode", &startmasternode, true, true, false},
+        {"solaris", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"solaris", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"solaris", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"solaris", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"solaris", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"solaris", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"solaris", "mnbudget", &mnbudget, true, true, false},
+        {"solaris", "preparebudget", &preparebudget, true, true, false},
+        {"solaris", "submitbudget", &submitbudget, true, true, false},
+        {"solaris", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"solaris", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"solaris", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"solaris", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"solaris", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"solaris", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"solaris", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"solaris", "checkbudgets", &checkbudgets, true, true, false},
+        {"solaris", "mnsync", &mnsync, true, true, false},
+        {"solaris", "spork", &spork, true, true, false},
+        {"solaris", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"amsterdamcoin", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"solaris", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -359,6 +398,20 @@ static const CRPCCommand vRPCCommands[] =
         {"wallet", "walletlock", &walletlock, true, false, true},
         {"wallet", "walletpassphrasechange", &walletpassphrasechange, true, false, true},
         {"wallet", "walletpassphrase", &walletpassphrase, true, false, true},
+
+        {"zerocoin", "getzerocoinbalance", &getzerocoinbalance, false, false, true},
+        {"zerocoin", "listmintedzerocoins", &listmintedzerocoins, false, false, true},
+        {"zerocoin", "listspentzerocoins", &listspentzerocoins, false, false, true},
+        {"zerocoin", "listzerocoinamounts", &listzerocoinamounts, false, false, true},
+        {"zerocoin", "mintzerocoin", &mintzerocoin, false, false, true},
+        {"zerocoin", "spendzerocoin", &spendzerocoin, false, false, true},
+        {"zerocoin", "resetmintzerocoin", &resetmintzerocoin, false, false, true},
+        {"zerocoin", "resetspentzerocoin", &resetspentzerocoin, false, false, true},
+        {"zerocoin", "getarchivedzerocoin", &getarchivedzerocoin, false, false, true},
+        {"zerocoin", "importzerocoins", &importzerocoins, false, false, true},
+        {"zerocoin", "exportzerocoins", &exportzerocoins, false, false, true},
+        {"zerocoin", "reconsiderzerocoins", &reconsiderzerocoins, false, false, true}
+
 #endif // ENABLE_WALLET
 };
 
@@ -574,16 +627,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use amsterdamcoind, or the -server option to amsterdamcoin-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use solarisd, or the -server option to solaris-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=amsterdamcoinrpc\n"
+                                               "rpcuser=solarisrpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"AmsterdamCoin Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"Solaris Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1034,14 +1087,14 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> amsterdamcoin-cli " + methodname + " " + args + "\n";
+    return "> solaris-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)
 {
     return "> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", "
            "\"method\": \"" +
-           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:51020/\n";
+           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:51473/\n";
 }
 
 const CRPCTable tableRPC;

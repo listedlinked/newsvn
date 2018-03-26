@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: amsterdamcoind.service
-Upstart: amsterdamcoind.conf
-OpenRC:  amsterdamcoind.openrc
-         amsterdamcoind.openrcconf
-CentOS:  amsterdamcoind.init
+SystemD: solarisd.service
+Upstart: solarisd.conf
+OpenRC:  solarisd.openrc
+         solarisd.openrcconf
+CentOS:  solarisd.init
 
 have been made available to assist packagers in creating node packages here.
 

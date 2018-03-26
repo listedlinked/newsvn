@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between amsterdamcoin-cli and amsterdamcoind)
- * of a given instance of the AmsterdamCoin system.
+ * CBaseChainParams defines the base parameters (shared between solaris-cli and solarisd)
+ * of a given instance of the Solaris system.
  */
 class CBaseChainParams
 {
