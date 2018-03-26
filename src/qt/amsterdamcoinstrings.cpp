@@ -226,10 +226,10 @@ QT_TRANSLATE_NOOP("amsterdamcoin-core", ""
 QT_TRANSLATE_NOOP("amsterdamcoin-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("amsterdamcoin-core", "(60020 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("amsterdamcoin-core", "(50020 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("amsterdamcoin-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("amsterdamcoin-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("amsterdamcoin-core", "(must be 60020 for mainnet)"),
+QT_TRANSLATE_NOOP("amsterdamcoin-core", "(must be 50020 for mainnet)"),
 QT_TRANSLATE_NOOP("amsterdamcoin-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("amsterdamcoin-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("amsterdamcoin-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

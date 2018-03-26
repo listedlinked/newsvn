@@ -129,7 +129,7 @@ public:
         pchMessageStart[2] = 0x01;
         pchMessageStart[3] = 0xa1;
         vAlertPubKey = ParseHex("045da9271f5d9df405d9e83c7c7e62e9c831cc85c51ffaa6b515c4f9c845dec4bf256460003f26ba9d394a17cb57e6759fe231eca75b801c20bccd19cbe4b7942d");
-        nDefaultPort = 60020;
+        nDefaultPort = 50020;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // AmsterdamCoin starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
