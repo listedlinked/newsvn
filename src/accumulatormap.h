@@ -1,8 +1,8 @@
-// Copyright (c) 2017 The Solaris developers
+// Copyright (c) 2017 The AmsterdamCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef Solaris_ACCUMULATORMAP_H
-#define Solaris_ACCUMULATORMAP_H
+#ifndef AmsterdamCoin_ACCUMULATORMAP_H
+#define AmsterdamCoin_ACCUMULATORMAP_H
 
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Coin.h"
@@ -20,4 +20,4 @@ public:
     uint256 GetCheckpoint();
     void Reset();
 };
-#endif //Solaris_ACCUMULATORMAP_H
+#endif //AmsterdamCoin_ACCUMULATORMAP_H

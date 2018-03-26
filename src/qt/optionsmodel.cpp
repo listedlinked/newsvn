@@ -80,10 +80,10 @@ void OptionsModel::Init()
         settings.setValue("nZeromintPercentage", 10);
     nZeromintPercentage = settings.value("nZeromintPercentage").toLongLong();
 
-    if (!settings.contains("nAnonymizeSolarisAmount"))
-        settings.setValue("nAnonymizeSolarisAmount", 1000);
+    if (!settings.contains("nAnonymizeAmsterdamCoinAmount"))
+        settings.setValue("nAnonymizeAmsterdamCoinAmount", 1000);
 
-    nAnonymizeSolarisAmount = settings.value("nAnonymizeSolarisAmount").toLongLong();
+    nAnonymizeAmsterdamCoinAmount = settings.value("nAnonymizeAmsterdamCoinAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -152,8 +152,8 @@ void OptionsModel::Init()
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
-    if (settings.contains("nAnonymizeSolarisAmount"))
-        SoftSetArg("-anonymizeamsterdamcoinamount", settings.value("nAnonymizeSolarisAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeAmsterdamCoinAmount"))
+        SoftSetArg("-anonymizeamsterdamcoinamount", settings.value("nAnonymizeAmsterdamCoinAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -235,8 +235,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return QVariant(nZeromintPercentage);
         case ZeromintPrefDenom:
             return QVariant(nPreferredDenom);
-        case AnonymizeSolarisAmount:
-            return QVariant(nAnonymizeSolarisAmount);
+        case AnonymizeAmsterdamCoinAmount:
+            return QVariant(nAnonymizeAmsterdamCoinAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -351,10 +351,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             emit preferredDenomChanged(nPreferredDenom);
             break;
 
-        case AnonymizeSolarisAmount:
-            nAnonymizeSolarisAmount = value.toInt();
-            settings.setValue("nAnonymizeSolarisAmount", nAnonymizeSolarisAmount);
-            emit anonymizeSolarisAmountChanged(nAnonymizeSolarisAmount);
+        case AnonymizeAmsterdamCoinAmount:
+            nAnonymizeAmsterdamCoinAmount = value.toInt();
+            settings.setValue("nAnonymizeAmsterdamCoinAmount", nAnonymizeAmsterdamCoinAmount);
+            emit anonymizeAmsterdamCoinAmountChanged(nAnonymizeAmsterdamCoinAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

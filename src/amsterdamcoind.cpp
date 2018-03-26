@@ -25,8 +25,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Solaris (http://www.amsterdamcoin.com),
- * which enables instant payments to anyone, anywhere in the world. Solaris uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called AmsterdamCoin (http://www.amsterdamcoin.com),
+ * which enables instant payments to anyone, anywhere in the world. AmsterdamCoin uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -70,13 +70,13 @@ bool AppInit(int argc, char* argv[])
 
     // Process help and version before taking care about datadir
     if (mapArgs.count("-?") || mapArgs.count("-help") || mapArgs.count("-version")) {
-        std::string strUsage = _("Solaris Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
+        std::string strUsage = _("AmsterdamCoin Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
 
         if (mapArgs.count("-version")) {
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  amsterdamcoind [options]                     " + _("Start Solaris Core Daemon") + "\n";
+                        "  amsterdamcoind [options]                     " + _("Start AmsterdamCoin Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -122,7 +122,7 @@ bool AppInit(int argc, char* argv[])
 #ifndef WIN32
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon) {
-            fprintf(stdout, "Solaris server starting\n");
+            fprintf(stdout, "AmsterdamCoin server starting\n");
 
             // Daemonize
             pid_t pid = fork();

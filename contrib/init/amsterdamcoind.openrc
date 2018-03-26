@@ -16,8 +16,8 @@ BITCOIND_USER=${BITCOIND_USER:-amsterdamcoin}
 BITCOIND_GROUP=${BITCOIND_GROUP:-amsterdamcoin}
 BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/amsterdamcoind}
 
-name="Solaris Core Daemon"
-description="Solaris crypto-currency p2p network daemon"
+name="AmsterdamCoin Core Daemon"
+description="AmsterdamCoin crypto-currency p2p network daemon"
 
 command="/usr/bin/amsterdamcoind"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Solaris Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"AmsterdamCoin Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

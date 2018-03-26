@@ -1,5 +1,5 @@
 [Unit]
-Description=Solaris's distributed currency daemon
+Description=AmsterdamCoin's distributed currency daemon
 After=network.target
 
 [Service]

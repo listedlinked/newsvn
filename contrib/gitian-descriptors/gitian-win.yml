@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/amsterdamcoin-project/amsterdamcoin.git"
+- "url": "https://github.com/CoinProjectsAmsterdamCoin-v4.git"
   "dir": "amsterdamcoin"
 files: []
 script: |

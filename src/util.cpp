@@ -106,7 +106,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-// Solaris only features
+// AmsterdamCoin only features
 // Masternode
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
@@ -121,7 +121,7 @@ int nZeromintPercentage = 10;
 int nPreferredDenom = 0;
 const int64_t AUTOMINT_DELAY = (60 * 5); // Wait at least 5 minutes until Automint starts
 
-int nAnonymizeSolarisAmount = 1000;
+int nAnonymizeAmsterdamCoinAmount = 1000;
 int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */
 int64_t enforceMasternodePaymentsTime = 4085657524;
@@ -238,7 +238,7 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "amsterdamcoin" is a composite category enabling all Solaris-related debug output
+            // "amsterdamcoin" is a composite category enabling all AmsterdamCoin-related debug output
             if (ptrCategory->count(string("amsterdamcoin"))) {
                 ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swiftx"));
@@ -425,13 +425,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\Solaris
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\Solaris
-// Mac: ~/Library/Application Support/Solaris
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\AmsterdamCoin
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\AmsterdamCoin
+// Mac: ~/Library/Application Support/AmsterdamCoin
 // Unix: ~/.amsterdamcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Solaris";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "AmsterdamCoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -443,7 +443,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Solaris";
+    return pathRet / "AmsterdamCoin";
 #else
     // Unix
     return pathRet / ".amsterdamcoin";

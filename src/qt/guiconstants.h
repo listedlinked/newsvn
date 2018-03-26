@@ -14,7 +14,7 @@ static const int MODEL_UPDATE_DELAY = 250;
 /* AskPassphraseDialog -- Maximum passphrase length */
 static const int MAX_PASSPHRASE_SIZE = 1024;
 
-/* Solaris GUI -- Size of icons in status bar */
+/* AmsterdamCoin GUI -- Size of icons in status bar */
 static const int STATUSBAR_ICONSIZE = 16;
 
 static const bool DEFAULT_SPLASHSCREEN = true;
@@ -49,9 +49,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 35
 
-#define QAPP_ORG_NAME "Solaris"
+#define QAPP_ORG_NAME "AmsterdamCoin"
 #define QAPP_ORG_DOMAIN "amsterdamcoin.com"
-#define QAPP_APP_NAME_DEFAULT "Solaris-Qt"
-#define QAPP_APP_NAME_TESTNET "Solaris-Qt-testnet"
+#define QAPP_APP_NAME_DEFAULT "AmsterdamCoin-Qt"
+#define QAPP_APP_NAME_TESTNET "AmsterdamCoin-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

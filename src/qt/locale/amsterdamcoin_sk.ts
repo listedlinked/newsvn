@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your Solaris addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše Solaris adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your AmsterdamCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše AmsterdamCoin adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your Solaris addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše Solaris adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your AmsterdamCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše AmsterdamCoin adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Solaris will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AMSs from being stolen by malware infecting your computer.</source>
-        <translation>Solaris sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše AMS pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>AmsterdamCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AMSs from being stolen by malware infecting your computer.</source>
+        <translation>AmsterdamCoin sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše AMS pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,16 +239,16 @@
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
-        <source>Enter a Solaris Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadajte adresu Solaris, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
+        <source>Enter a AmsterdamCoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadajte adresu AmsterdamCoin, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The Solaris address to sign the message with</source>
-        <translation>Adresa Solaris, ktorou chcete správu podpísať</translation>
+        <source>The AmsterdamCoin address to sign the message with</source>
+        <translation>Adresa AmsterdamCoin, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Solaris address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Solaris adresy</translation>
+        <source>Sign the message to prove you own this AmsterdamCoin address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto AmsterdamCoin adresy</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
     </message>
     <message>
-        <source>The Solaris address the message was signed with</source>
-        <translation>Solaris adresa, ktorou bola správa podpísaná</translation>
+        <source>The AmsterdamCoin address the message was signed with</source>
+        <translation>AmsterdamCoin adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Solaris address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Solaris adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified AmsterdamCoin address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou AmsterdamCoin adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,12 +598,12 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>Solaris Core</source>
-        <translation>Solaris Core</translation>
+        <source>AmsterdamCoin Core</source>
+        <translation>AmsterdamCoin Core</translation>
     </message>
     <message>
-        <source>Send coins to a Solaris address</source>
-        <translation>Odoslať mince na adresu Solaris</translation>
+        <source>Send coins to a AmsterdamCoin address</source>
+        <translation>Odoslať mince na adresu AmsterdamCoin</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and amsterdamcoin: URIs)</source>
@@ -618,24 +618,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About Solaris Core</source>
-        <translation>O Solaris Core</translation>
+        <source>&amp;About AmsterdamCoin Core</source>
+        <translation>O AmsterdamCoin Core</translation>
     </message>
     <message>
-        <source>Show information about Solaris Core</source>
-        <translation>Zobraziť informácie o Solaris Core</translation>
+        <source>Show information about AmsterdamCoin Core</source>
+        <translation>Zobraziť informácie o AmsterdamCoin Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Solaris</source>
-        <translation>Zmeňte možnosti konfigurácie pre Solaris</translation>
+        <source>Modify configuration options for AmsterdamCoin</source>
+        <translation>Zmeňte možnosti konfigurácie pre AmsterdamCoin</translation>
     </message>
     <message>
-        <source>Sign messages with your Solaris addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy Solaris, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your AmsterdamCoin addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy AmsterdamCoin, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Solaris addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými Solaris adresami</translation>
+        <source>Verify messages to ensure they were signed with specified AmsterdamCoin addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými AmsterdamCoin adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a Solaris: URI or payment request</source>
-        <translation>Otvorte Solaris: URI alebo žiadosť o platbu</translation>
+        <source>Open a AmsterdamCoin: URI or payment request</source>
+        <translation>Otvorte AmsterdamCoin: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the Solaris Core help message to get a list with possible Solaris command-line options</source>
-        <translation>Zobraziť pomocnú správu programu Solaris Core a získajte zoznam možností príkazového riadka Solaris</translation>
+        <source>Show the AmsterdamCoin Core help message to get a list with possible AmsterdamCoin command-line options</source>
+        <translation>Zobraziť pomocnú správu programu AmsterdamCoin Core a získajte zoznam možností príkazového riadka AmsterdamCoin</translation>
     </message>
     <message>
-        <source>Solaris Core client</source>
-        <translation>Solaris Core klient</translation>
+        <source>AmsterdamCoin Core client</source>
+        <translation>AmsterdamCoin Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -904,15 +904,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Solaris Core</source>
-        <translation>Solaris Core</translation>
+        <source>AmsterdamCoin Core</source>
+        <translation>AmsterdamCoin Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Solaris Core</source>
-        <translation>Solaris Core</translation>
+        <source>AmsterdamCoin Core</source>
+        <translation>AmsterdamCoin Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1136,8 +1136,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Solaris address to sign the message with</source>
-        <translation>Adresa Solaris, ktorou chcete správu podpísať</translation>
+        <source>The AmsterdamCoin address to sign the message with</source>
+        <translation>Adresa AmsterdamCoin, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1160,16 +1160,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Solaris address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Solaris adresy</translation>
+        <source>Sign the message to prove you own this AmsterdamCoin address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto AmsterdamCoin adresy</translation>
     </message>
     <message>
-        <source>The Solaris address the message was signed with</source>
-        <translation>Solaris adresa, ktorou bola správa podpísaná</translation>
+        <source>The AmsterdamCoin address the message was signed with</source>
+        <translation>AmsterdamCoin adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Solaris address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Solaris adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified AmsterdamCoin address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou AmsterdamCoin adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1207,8 +1207,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Solaris Core</source>
-        <translation>Solaris Core</translation>
+        <source>AmsterdamCoin Core</source>
+        <translation>AmsterdamCoin Core</translation>
     </message>
     </context>
 <context>

@@ -89,7 +89,7 @@ use old versions of Upstart and do not supply the start-stop-daemon uitility.
 Copy amsterdamcoind.init to /etc/init.d/amsterdamcoind. Test by running "service amsterdamcoind start".
 
 Using this script, you can adjust the path and flags to the amsterdamcoind program by
-setting the SolarisD and FLAGS environment variables in the file
+setting the AmsterdamCoinD and FLAGS environment variables in the file
 /etc/sysconfig/amsterdamcoind. You can also use the DAEMONOPTS environment variable here.
 
 5. Auto-respawn

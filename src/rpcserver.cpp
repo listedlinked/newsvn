@@ -238,10 +238,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Solaris server.");
+            "\nStop AmsterdamCoin server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Solaris server stopping";
+    return "AmsterdamCoin server stopping";
 }
 
 
@@ -319,7 +319,7 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Solaris features */
+        /* AmsterdamCoin features */
         {"amsterdamcoin", "masternode", &masternode, true, true, false},
         {"amsterdamcoin", "listmasternodes", &listmasternodes, true, true, false},
         {"amsterdamcoin", "getmasternodecount", &getmasternodecount, true, true, false},
@@ -636,7 +636,7 @@ void StartRPCThreads()
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"Solaris Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"AmsterdamCoin Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);

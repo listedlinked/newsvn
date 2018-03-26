@@ -130,12 +130,12 @@ public:
         pchMessageStart[3] = 0xa1;
         vAlertPubKey = ParseHex("045da9271f5d9df405d9e83c7c7e62e9c831cc85c51ffaa6b515c4f9c845dec4bf256460003f26ba9d394a17cb57e6759fe231eca75b801c20bccd19cbe4b7942d");
         nDefaultPort = 60020;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // Solaris starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // AmsterdamCoin starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Solaris: 1 minute
-        nTargetSpacing = 1 * 60;  // Solaris: 1 minute
+        nTargetTimespan = 1 * 60; // AmsterdamCoin: 1 minute
+        nTargetSpacing = 1 * 60;  // AmsterdamCoin: 1 minute
         nMaturity = 101;
 		nMaxMoneyOut = 10000000000 * COIN;
         /** Height or Time Based Activations **/
@@ -146,7 +146,7 @@ public:
         nZerocoinStartTime = 1524060000; // Wednesday 18 April 2018 14:00:00 UTC
 		nZerocoinStartHeight = 259300;
 		
-		const char* pszTimestamp = "Solaris 30-09-2017";
+		const char* pszTimestamp = "AmsterdamCoin 30-09-2017";
 		
         CMutableTransaction txNew;
         txNew.vin.resize(1);
@@ -244,8 +244,8 @@ public:
         vAlertPubKey = ParseHex("000010e83b2703ccf322f7dbd62dd5855ac7c10bd055814ce121ba32607d573b8810c02c0582aed05b4deb9c4b77b26d92428c61256cd42774babea0a073b2ed0c9");
         nDefaultPort = 51474;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Solaris: 1 day
-        nTargetSpacing = 1 * 60;  // Solaris: 1 minute
+        nTargetTimespan = 1 * 60; // AmsterdamCoin: 1 day
+        nTargetSpacing = 1 * 60;  // AmsterdamCoin: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -310,8 +310,8 @@ public:
         pchMessageStart[3] = 0xac;
         nSubsidyHalvingInterval = 150;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // Solaris: 1 day
-        nTargetSpacing = 1 * 60;        // Solaris: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // AmsterdamCoin: 1 day
+        nTargetSpacing = 1 * 60;        // AmsterdamCoin: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1454124731;
         genesis.nBits = 0x207fffff;

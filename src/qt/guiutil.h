@@ -30,7 +30,7 @@ class QUrl;
 class QWidget;
 QT_END_NAMESPACE
 
-/** Utility functions used by the Solaris Qt UI.
+/** Utility functions used by the AmsterdamCoin Qt UI.
  */
 namespace GUIUtil
 {
@@ -38,7 +38,7 @@ namespace GUIUtil
 QString dateTimeStr(const QDateTime& datetime);
 QString dateTimeStr(qint64 nTime);
 
-// Render Solaris addresses in monospace font
+// Render AmsterdamCoin addresses in monospace font
 QFont bitcoinAddressFont();
 
 // Set up widgets for address and amounts

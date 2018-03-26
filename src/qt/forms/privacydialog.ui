@@ -58,7 +58,7 @@
           <bool>true</bool>
          </property>
          <property name="text">
-          <string>ZeroSolaris (zAMS)</string>
+          <string>ZeroAmsterdamCoin (zAMS)</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -93,7 +93,7 @@
                <item>
                 <widget class="QLabel" name="labelzAMSSyncStatus">
                  <property name="toolTip">
-                  <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Solaris network after a connection is established, but this process has not completed yet.</string>
+                  <string>The displayed information may be out of date. Your wallet automatically synchronizes with the AmsterdamCoin network after a connection is established, but this process has not completed yet.</string>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QLabel { color: red; }</string>
@@ -695,7 +695,7 @@ zAMS are mature when they have more than 20 confirmations AND more than 2 mints 
                     </size>
                    </property>
                    <property name="toolTip">
-                    <string>The Solaris address to send the payment to. Creates local payment to yourself when empty.</string>
+                    <string>The AmsterdamCoin address to send the payment to. Creates local payment to yourself when empty.</string>
                    </property>
                   </widget>
                  </item>

@@ -1,9 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Solaris
-Comment=Solaris P2P Cryptocurrency
-Comment[fr]=Solaris, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Solaris, eşten eşe kriptografik sanal para birimi
+Name=AmsterdamCoin
+Comment=AmsterdamCoin P2P Cryptocurrency
+Comment[fr]=AmsterdamCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=AmsterdamCoin, eşten eşe kriptografik sanal para birimi
 Exec=amsterdamcoin-qt %u
 Terminal=false
 Type=Application

@@ -10,7 +10,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between amsterdamcoin-cli and amsterdamcoind)
- * of a given instance of the Solaris system.
+ * of a given instance of the AmsterdamCoin system.
  */
 class CBaseChainParams
 {
