@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2015-2017 The AmsterdamCoin developers
+// Copyright (c) 2015-2017 The NewSVN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -238,10 +238,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop AmsterdamCoin server.");
+            "\nStop NewSVN server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "AmsterdamCoin server stopping";
+    return "NewSVN server stopping";
 }
 
 
@@ -319,36 +319,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* AmsterdamCoin features */
-        {"amsterdamcoin", "masternode", &masternode, true, true, false},
-        {"amsterdamcoin", "listmasternodes", &listmasternodes, true, true, false},
-        {"amsterdamcoin", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"amsterdamcoin", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"amsterdamcoin", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"amsterdamcoin", "masternodedebug", &masternodedebug, true, true, false},
-        {"amsterdamcoin", "startmasternode", &startmasternode, true, true, false},
-        {"amsterdamcoin", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"amsterdamcoin", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"amsterdamcoin", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"amsterdamcoin", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"amsterdamcoin", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"amsterdamcoin", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"amsterdamcoin", "mnbudget", &mnbudget, true, true, false},
-        {"amsterdamcoin", "preparebudget", &preparebudget, true, true, false},
-        {"amsterdamcoin", "submitbudget", &submitbudget, true, true, false},
-        {"amsterdamcoin", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"amsterdamcoin", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"amsterdamcoin", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"amsterdamcoin", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"amsterdamcoin", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"amsterdamcoin", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"amsterdamcoin", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"amsterdamcoin", "checkbudgets", &checkbudgets, true, true, false},
-        {"amsterdamcoin", "mnsync", &mnsync, true, true, false},
-        {"amsterdamcoin", "spork", &spork, true, true, false},
-        {"amsterdamcoin", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* NewSVN features */
+        {"newsvn", "masternode", &masternode, true, true, false},
+        {"newsvn", "listmasternodes", &listmasternodes, true, true, false},
+        {"newsvn", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"newsvn", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"newsvn", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"newsvn", "masternodedebug", &masternodedebug, true, true, false},
+        {"newsvn", "startmasternode", &startmasternode, true, true, false},
+        {"newsvn", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"newsvn", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"newsvn", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"newsvn", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"newsvn", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"newsvn", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"newsvn", "mnbudget", &mnbudget, true, true, false},
+        {"newsvn", "preparebudget", &preparebudget, true, true, false},
+        {"newsvn", "submitbudget", &submitbudget, true, true, false},
+        {"newsvn", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"newsvn", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"newsvn", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"newsvn", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"newsvn", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"newsvn", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"newsvn", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"newsvn", "checkbudgets", &checkbudgets, true, true, false},
+        {"newsvn", "mnsync", &mnsync, true, true, false},
+        {"newsvn", "spork", &spork, true, true, false},
+        {"newsvn", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"amsterdamcoin", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"newsvn", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -627,16 +627,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use amsterdamcoind, or the -server option to amsterdamcoin-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use newsvnd, or the -server option to newsvn-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=amsterdamcoinrpc\n"
+                                               "rpcuser=newsvnrpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"AmsterdamCoin Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"NewSVN Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1087,7 +1087,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> amsterdamcoin-cli " + methodname + " " + args + "\n";
+    return "> newsvn-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

@@ -1,34 +1,34 @@
-bin_PROGRAMS += qt/amsterdamcoin-qt
+bin_PROGRAMS += qt/newsvn-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# amsterdamcoin qt core #
+# newsvn qt core #
 QT_TS = \
-  qt/locale/amsterdamcoin_bg.ts \
-  qt/locale/amsterdamcoin_ca.ts \
-  qt/locale/amsterdamcoin_cs.ts \
-  qt/locale/amsterdamcoin_da.ts \
-  qt/locale/amsterdamcoin_de.ts \
-  qt/locale/amsterdamcoin_en.ts \
-  qt/locale/amsterdamcoin_en_US.ts \
-  qt/locale/amsterdamcoin_es.ts \
-  qt/locale/amsterdamcoin_fi.ts \
-  qt/locale/amsterdamcoin_fr_FR.ts \
-  qt/locale/amsterdamcoin_hr.ts \
-  qt/locale/amsterdamcoin_it.ts \
-  qt/locale/amsterdamcoin_ja.ts \
-  qt/locale/amsterdamcoin_ko_KR.ts \
-  qt/locale/amsterdamcoin_nl.ts \
-  qt/locale/amsterdamcoin_pl.ts \
-  qt/locale/amsterdamcoin_pt.ts \
-  qt/locale/amsterdamcoin_pt_BR.ts \
-  qt/locale/amsterdamcoin_ro_RO.ts \
-  qt/locale/amsterdamcoin_ru.ts \
-  qt/locale/amsterdamcoin_sk.ts \
-  qt/locale/amsterdamcoin_sv.ts \
-  qt/locale/amsterdamcoin_tr.ts \
-  qt/locale/amsterdamcoin_uk.ts \
-  qt/locale/amsterdamcoin_zh_CN.ts \
-  qt/locale/amsterdamcoin_zh_TW.ts
+  qt/locale/newsvn_bg.ts \
+  qt/locale/newsvn_ca.ts \
+  qt/locale/newsvn_cs.ts \
+  qt/locale/newsvn_da.ts \
+  qt/locale/newsvn_de.ts \
+  qt/locale/newsvn_en.ts \
+  qt/locale/newsvn_en_US.ts \
+  qt/locale/newsvn_es.ts \
+  qt/locale/newsvn_fi.ts \
+  qt/locale/newsvn_fr_FR.ts \
+  qt/locale/newsvn_hr.ts \
+  qt/locale/newsvn_it.ts \
+  qt/locale/newsvn_ja.ts \
+  qt/locale/newsvn_ko_KR.ts \
+  qt/locale/newsvn_nl.ts \
+  qt/locale/newsvn_pl.ts \
+  qt/locale/newsvn_pt.ts \
+  qt/locale/newsvn_pt_BR.ts \
+  qt/locale/newsvn_ro_RO.ts \
+  qt/locale/newsvn_ru.ts \
+  qt/locale/newsvn_sk.ts \
+  qt/locale/newsvn_sv.ts \
+  qt/locale/newsvn_tr.ts \
+  qt/locale/newsvn_uk.ts \
+  qt/locale/newsvn_zh_CN.ts \
+  qt/locale/newsvn_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -114,16 +114,16 @@ BITCOIN_MM = \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/amsterdamcoin.moc \
+  qt/newsvn.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_amsterdamcoin.cpp
-QT_QRC = qt/amsterdamcoin.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_amsterdamcoin_locale.cpp
-QT_QRC_LOCALE = qt/amsterdamcoin_locale.qrc
+QT_QRC_CPP = qt/qrc_newsvn.cpp
+QT_QRC = qt/newsvn.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_newsvn_locale.cpp
+QT_QRC_LOCALE = qt/newsvn_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -241,12 +241,12 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
-  qt/res/icons/unit_amsterdamcoin.png \
-  qt/res/icons/unit_mamsterdamcoin.png \
-  qt/res/icons/unit_uamsterdamcoin.png \
-  qt/res/icons/unit_tamsterdamcoin.png \
-  qt/res/icons/unit_tmamsterdamcoin.png \
-  qt/res/icons/unit_tuamsterdamcoin.png
+  qt/res/icons/unit_newsvn.png \
+  qt/res/icons/unit_mnewsvn.png \
+  qt/res/icons/unit_unewsvn.png \
+  qt/res/icons/unit_tnewsvn.png \
+  qt/res/icons/unit_tmnewsvn.png \
+  qt/res/icons/unit_tunewsvn.png
 
 BITCOIN_QT_CPP = \
   qt/bitcoinaddressvalidator.cpp \
@@ -316,7 +316,7 @@ RES_IMAGES = \
   qt/res/images/about.png \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
-  qt/res/images/amsterdamcoin_logo_horizontal.png \
+  qt/res/images/newsvn_logo_horizontal.png \
   qt/res/images/downArrow.png \
   qt/res/images/downArrow_small.png \
   qt/res/images/upArrow_small.png \
@@ -332,7 +332,7 @@ RES_CSS = \
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/amsterdamcoin-qt-res.rc
+BITCOIN_RC = qt/res/newsvn-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -352,69 +352,69 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_amsterdamcoin_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_newsvn_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# amsterdamcoin-qt binary #
-qt_amsterdamcoin_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# newsvn-qt binary #
+qt_newsvn_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_amsterdamcoin_qt_SOURCES = qt/amsterdamcoin.cpp
+qt_newsvn_qt_SOURCES = qt/newsvn.cpp
 if TARGET_DARWIN
-  qt_amsterdamcoin_qt_SOURCES += $(BITCOIN_MM)
+  qt_newsvn_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_amsterdamcoin_qt_SOURCES += $(BITCOIN_RC)
+  qt_newsvn_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_amsterdamcoin_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_newsvn_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_amsterdamcoin_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_newsvn_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_amsterdamcoin_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_newsvn_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_amsterdamcoin_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBMEMENV) \
+qt_newsvn_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-qt_amsterdamcoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_amsterdamcoin_qt_LIBTOOLFLAGS = --tag CXX
+qt_newsvn_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_newsvn_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 .SECONDARY: $(QT_QM)
 
-qt/amsterdamcoinstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
+qt/newsvnstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: qt/amsterdamcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: qt/newsvnstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/amsterdamcoin_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/newsvn_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@test -f $(@D)/$(<F) || cp -f $< $(@D)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name amsterdamcoin_locale $(@D)/$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name newsvn_locale $(@D)/$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name amsterdamcoin $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name newsvn $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
 
 CLEANFILES += $(CLEAN_QT)
 
-amsterdamcoin_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_amsterdamcoin_qt_OBJECTS) qt/amsterdamcoin-qt$(EXEEXT) $(LIBBITCOINQT)
+newsvn_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_newsvn_qt_OBJECTS) qt/newsvn-qt$(EXEEXT) $(LIBBITCOINQT)
 
-amsterdamcoin_qt : qt/amsterdamcoin-qt$(EXEEXT)
+newsvn_qt : qt/newsvn-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

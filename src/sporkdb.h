@@ -1,9 +1,9 @@
-// Copyright (c) 2017 The AmsterdamCoin developers
+// Copyright (c) 2017 The NewSVN developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AmsterdamCoin_CSPORKDB_H
-#define AmsterdamCoin_CSPORKDB_H
+#ifndef NewSVN_CSPORKDB_H
+#define NewSVN_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -25,4 +25,4 @@ public:
 };
 
 
-#endif //AmsterdamCoin_CSPORKDB_H
+#endif //NewSVN_CSPORKDB_H

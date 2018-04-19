@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=NewSVN
+Comment=NewSVN P2P Cryptocurrency
+Comment[fr]=NewSVN, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=NewSVN, eşten eşe kriptografik sanal para birimi
+Exec=newsvn-qt %u
+Terminal=false
+Type=Application
+Icon=newsvn128
+MimeType=x-scheme-handler/newsvn;
+Categories=Office;Finance;

@@ -22,7 +22,7 @@
 #endif
 
 #if defined(HAVE_CONFIG_H)
-#include "config/amsterdamcoin-config.h" /* for USE_QRCODE */
+#include "config/newsvn-config.h" /* for USE_QRCODE */
 #endif
 
 #ifdef USE_QRCODE

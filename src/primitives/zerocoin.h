@@ -1,8 +1,8 @@
-// Copyright (c) 2017 The AmsterdamCoin developers
+// Copyright (c) 2017 The NewSVN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef AmsterdamCoin_ZEROCOIN_H
-#define AmsterdamCoin_ZEROCOIN_H
+#ifndef NewSVN_ZEROCOIN_H
+#define NewSVN_ZEROCOIN_H
 
 #include <amount.h>
 #include <limits.h>
@@ -189,4 +189,4 @@ public:
     int GetNeededSpends();
 };
 
-#endif //AmsterdamCoin_ZEROCOIN_H
+#endif //NewSVN_ZEROCOIN_H

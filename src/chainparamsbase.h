@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between amsterdamcoin-cli and amsterdamcoind)
- * of a given instance of the AmsterdamCoin system.
+ * CBaseChainParams defines the base parameters (shared between newsvn-cli and newsvnd)
+ * of a given instance of the NewSVN system.
  */
 class CBaseChainParams
 {

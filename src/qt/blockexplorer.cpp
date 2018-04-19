@@ -473,8 +473,8 @@ void BlockExplorer::showEvent(QShowEvent*)
         updateNavButtons();
 
         if (!GetBoolArg("-txindex", false)) {
-            QString Warning = tr("Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (amsterdamcoin.conf).");
-            QMessageBox::warning(this, "AmsterdamCoin Core Blockchain Explorer", Warning, QMessageBox::Ok);
+            QString Warning = tr("Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (newsvn.conf).");
+            QMessageBox::warning(this, "NewSVN Core Blockchain Explorer", Warning, QMessageBox::Ok);
         }
     }
 }

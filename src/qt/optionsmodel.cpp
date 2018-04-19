@@ -1,12 +1,12 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2015-2017 The AmsterdamCoin developers
+// Copyright (c) 2015-2017 The NewSVN developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/amsterdamcoin-config.h"
+#include "config/newsvn-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -80,10 +80,10 @@ void OptionsModel::Init()
         settings.setValue("nZeromintPercentage", 10);
     nZeromintPercentage = settings.value("nZeromintPercentage").toLongLong();
 
-    if (!settings.contains("nAnonymizeAmsterdamCoinAmount"))
-        settings.setValue("nAnonymizeAmsterdamCoinAmount", 1000);
+    if (!settings.contains("nAnonymizeNewSVNAmount"))
+        settings.setValue("nAnonymizeNewSVNAmount", 1000);
 
-    nAnonymizeAmsterdamCoinAmount = settings.value("nAnonymizeAmsterdamCoinAmount").toLongLong();
+    nAnonymizeNewSVNAmount = settings.value("nAnonymizeNewSVNAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -152,8 +152,8 @@ void OptionsModel::Init()
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
-    if (settings.contains("nAnonymizeAmsterdamCoinAmount"))
-        SoftSetArg("-anonymizeamsterdamcoinamount", settings.value("nAnonymizeAmsterdamCoinAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeNewSVNAmount"))
+        SoftSetArg("-anonymizenewsvnamount", settings.value("nAnonymizeNewSVNAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -164,7 +164,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in amsterdamcoin.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in newsvn.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
@@ -235,8 +235,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return QVariant(nZeromintPercentage);
         case ZeromintPrefDenom:
             return QVariant(nPreferredDenom);
-        case AnonymizeAmsterdamCoinAmount:
-            return QVariant(nAnonymizeAmsterdamCoinAmount);
+        case AnonymizeNewSVNAmount:
+            return QVariant(nAnonymizeNewSVNAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -351,10 +351,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             emit preferredDenomChanged(nPreferredDenom);
             break;
 
-        case AnonymizeAmsterdamCoinAmount:
-            nAnonymizeAmsterdamCoinAmount = value.toInt();
-            settings.setValue("nAnonymizeAmsterdamCoinAmount", nAnonymizeAmsterdamCoinAmount);
-            emit anonymizeAmsterdamCoinAmountChanged(nAnonymizeAmsterdamCoinAmount);
+        case AnonymizeNewSVNAmount:
+            nAnonymizeNewSVNAmount = value.toInt();
+            settings.setValue("nAnonymizeNewSVNAmount", nAnonymizeNewSVNAmount);
+            emit anonymizeNewSVNAmountChanged(nAnonymizeNewSVNAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

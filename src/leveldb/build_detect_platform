@@ -93,8 +93,8 @@ case "$TARGET_OS" in
         PORT_FILE=port/port_posix.cc
         ;;
     SunOS)
-        PLATFORM=OS_AMSTERDAMCOIN
-        COMMON_FLAGS="$MEMCMP_FLAG -D_REENTRANT -DOS_AMSTERDAMCOIN"
+        PLATFORM=OS_NEWSVN
+        COMMON_FLAGS="$MEMCMP_FLAG -D_REENTRANT -DOS_NEWSVN"
         PLATFORM_LIBS="-lpthread -lrt"
         PORT_FILE=port/port_posix.cc
         ;;
